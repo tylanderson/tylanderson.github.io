@@ -6,5 +6,3 @@ This website will be updated with projects as I get to them. It is meant as a le
 
 
 Updated 8/15/2017
-
-This will be updated with projects as I am able to get to them
