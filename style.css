@@ -1,0 +1,33 @@
+body{
+  background-color: AliceBlue;
+  margin:0l
+  padding: 0;
+  }
+.header {
+  background-image:
+  url(http://www.lovethesepics.com/wp-content/uploads/2013/03/Massive-algae-bloom-as-seen-from-space-near-South-of-Cornwall-Great-Britain.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#header-text {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 25%;
+  width: 60%;
+}
+h1 {
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+}
+h2 {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+}
