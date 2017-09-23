@@ -1,0 +1,45 @@
+body{
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  }
+
+.nav {
+    background-color: peru;
+    overflow: hidden;
+}
+
+#projects{
+    
+}
+#contact{
+    position: relative;
+    text-align: center;
+}
+
+
+.backimg img{
+	margin-bottom: 10px;
+    margin-top: 20px;
+	height: 75%;
+	width: 75%;
+    border: solid white 10px;
+}
+}
+footer {
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  background-color: peru;
+}
+a {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+  background-color: peru;
+}
