@@ -3,28 +3,36 @@ body{
   margin: 0;
   padding: 0;
   }
-
+/*
+Navigation Bar Code
+*/
 .nav {
     background-color: peru;
     overflow: hidden;
-    padding: 5px;
-    line-height: 30px;
 }
-
-#projects{
-    
+.nav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
 }
 #contact{
     float: right;
 }
 
 .nav a:hover {
-    background-color: peachpuff;
-    color: black;
-    padding: 10px;
+    background-color: ;
+    color: darkslategray;
 }
-.active {
-    background-color: wheat;
+.nav a.active {
+    background-color: blue;
 }
 .backimg img{
 	margin-bottom: 10px;
@@ -34,20 +42,14 @@ body{
     border: solid white 10px;
     
 }
-
-a {
-  color: #FFF;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 100;
-  background-color: peru;
-}
+/*
+Footer Code
+*/
 footer {
   color: #FFF;
   font-family: 'Quicksand', sans-serif;
-  font-size: 3-px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 100;
   margin: 0;
   background-color: peru;
   text-align: center;
