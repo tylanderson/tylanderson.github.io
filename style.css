@@ -6,11 +6,11 @@ body{
 /*
 Navigation Bar Code
 */
-.nav {
+.mainnav {
     background-color: peru;
     overflow: hidden;
 }
-.nav a{
+.mainnav a{
     float: left;
     display: block;
     color: white;
@@ -34,7 +34,7 @@ Navigation Bar Code
 .nav a.active {
     background-color: blue;
 }
-.backimg img{
+.homepageimg img{
 	margin-bottom: 10px;
     margin-top: 20px;
 	height: 40%;
