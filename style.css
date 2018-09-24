@@ -35,17 +35,19 @@ Navigation Bar Code
     background-color: blue;
 }
 .homepageimg img{
-	margin-bottom: 10px;
-    margin-top: 20px;
+	margin-bottom: 0px;
+    margin-top: 1%;
 	height: 40%;
 	width: 40%;
     border: solid white 10px;
     
 }
 
-.homepage #h1{
-    font-size: 10px;
-    
+.homepageh1{
+    font-size: 5px;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
 }
 
 
