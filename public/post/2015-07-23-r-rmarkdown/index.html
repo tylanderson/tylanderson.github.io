@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.0.0">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Tyler Anderson">
 
   
@@ -62,6 +62,8 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -69,7 +71,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One|Ubuntu,400italic,700|Ubntu+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -120,7 +122,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
   
   <meta property="article:published_time" content="2015-07-23T21:13:14-05:00">
   
-  <meta property="article:modified_time" content="2015-07-23T21:13:14-05:00">
+  <meta property="article:modified_time" content="2018-10-25T00:23:00-04:00">
   
 
   
@@ -131,6 +133,37 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -214,6 +247,12 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
       </ul>
 
     </div>
@@ -260,9 +299,11 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
   <span class="article-date">
     
+        Last updated on
+    
     <meta content="2015-07-23 21:13:14 -0500 -0500" itemprop="datePublished">
-    <time datetime="2015-07-23 21:13:14 -0500 -0500" itemprop="dateModified">
-      Jul 23, 2015
+    <time datetime="2018-10-25 00:23:00 -0400 EDT" itemprop="dateModified">
+      Oct 25, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -338,6 +379,22 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
 </div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 </div>
 
@@ -346,7 +403,10 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <div id="r-markdown" class="section level1">
+      
+
+
+<div id="r-markdown" class="section level1">
 <h1>R Markdown</h1>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
@@ -423,10 +483,14 @@ Figure 1: A fancy pie chart.
       
       
       
+        
+      
+      
+      
       
       
       <li>
-        <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" target="_blank" rel="noopener">
+        <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" >
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -434,7 +498,13 @@ Figure 1: A fancy pie chart.
       
       
       
+        
       
+      
+      
+      
+      
+        
       
       <li>
         <a itemprop="sameAs" href="https://www.linkedin.com/in/tylanderson/" target="_blank" rel="noopener">
@@ -445,6 +515,12 @@ Figure 1: A fancy pie chart.
       
       
       
+      
+      
+      
+      
+        
+      
       <li>
         <a itemprop="sameAs" href="https://www.researchgate.net/profile/Tyler_Anderson7" target="_blank" rel="noopener">
           <i class="ai ai-researchgate"></i>
@@ -454,10 +530,16 @@ Figure 1: A fancy pie chart.
       
       
       
+        
       
+      
+      
+      
+      
+        
       
       <li>
-        <a itemprop="sameAs" href="//github.com/tylanderson" target="_blank" rel="noopener">
+        <a itemprop="sameAs" href="//github.com/tylanderson" >
           <i class="fab fa-github"></i>
         </a>
       </li>
@@ -559,10 +641,9 @@ Figure 1: A fancy pie chart.
       
     
 
-    <script src="/js/hugo-academic.js"></script>
     
-
     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -580,7 +661,7 @@ Figure 1: A fancy pie chart.
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -614,10 +695,21 @@ Figure 1: A fancy pie chart.
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
     
 
   </body>

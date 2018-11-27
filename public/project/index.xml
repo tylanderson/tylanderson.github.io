@@ -7,27 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Tyler Anderson</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      <title>Hurricane Risk</title>
+      <link>/project/hurricane-risk/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
-      <guid>/project/external-project/</guid>
-      <description></description>
+      <guid>/project/hurricane-risk/</guid>
+      <description>This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI.</description>
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      <title>Mexico Land Change</title>
+      <link>/project/central-america-landchange/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
-      <guid>/project/internal-project/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+      <guid>/project/central-america-landchange/</guid>
+      <description> Land Cover Transition Potentials in Mexico for 2030 </description>
     </item>
     
   </channel>

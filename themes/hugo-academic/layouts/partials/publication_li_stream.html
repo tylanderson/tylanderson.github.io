@@ -1,4 +1,4 @@
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0" itemprop="name">
@@ -27,8 +27,8 @@
       </div>
     </div>
 
-    <div class="talk-links">
-      {{ partial "publication_links" (dict "content" . "is_list" 1) }}
+    <div class="btn-links">
+      {{ partial "page_links" (dict "content" . "is_list" 1) }}
     </div>
 
   </div>

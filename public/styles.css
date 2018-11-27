@@ -17,7 +17,7 @@
  **************************************************/
 
 html {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
@@ -71,7 +71,7 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-light {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -79,7 +79,7 @@ ul, ol, dl {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: .5rem;
@@ -142,7 +142,7 @@ figcaption {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1.65rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 figcaption.numbered:before {
@@ -164,7 +164,7 @@ figcaption h4 {
 
 pre,
 code {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #c7254e;
   background-color: #f9f2f4;
 }
@@ -246,6 +246,66 @@ small,
 /*************************************************
  *  Search.
  **************************************************/
+
+.search-results {
+  transform: scale(0);
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: scroll;
+  position: fixed;
+  visibility: hidden;
+  z-index: -99;
+}
+
+.dark .search-results {
+  background-color: rgb(40, 42, 54);
+}
+
+.searching {
+  overflow: hidden;
+}
+
+.searching .search-results {
+  transform: scale(1);
+  visibility: visible;
+  z-index: 11; /* Second highest index, after navbar. */
+}
+
+.searching #search-box #search-query {
+  width: 100%;
+}
+
+.search-results > .container {
+  padding-top: calc(70px + 2rem); /* Max responsive navbar height plus padding. */
+}
+
+.search-header {
+  background-color: #fff;
+  position: sticky;
+  top: calc(70px + 2rem); /* Max responsive navbar height plus padding. */
+  padding-bottom: 1rem;
+}
+
+.dark .search-header {
+  background-color: rgb(40, 42, 54);
+}
+
+.search-header h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.col-search-close {
+  text-align: right;
+}
+
+.search-header i {
+  font-size: 2rem;
+  line-height: 1;
+}
 
 #search-box {
   position: relative; /* Required for search icon positioning. */
@@ -702,6 +762,12 @@ article {
   box-sizing: border-box;
 }
 
+/* Prevent FA's line height of 1 causing FA button links to be taller than other button links. */
+.btn-links .fab,
+.btn-links .fas {
+  line-height: inherit !important;
+}
+
 .split-header-image {
   position: relative; /* Required for caption positioning */
   clear: both;
@@ -808,8 +874,8 @@ article .article-metadata {
 .article-style video {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -820,8 +886,8 @@ article .article-metadata {
 }
 
 .article-style figure {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .article-style figure img {
@@ -965,7 +1031,7 @@ article .article-metadata {
   line-height: 30px; /* Match share bar line height. */
 }
 
-.pub .pub-row-heading {
+.pub-row-heading {
   font-weight: bold;
 }
 
@@ -991,7 +1057,7 @@ article .article-metadata {
   color: rgba(255,255,255,0.54);
 }
 
-.pub-list-item .pub-links {
+.pub-list-item .btn-links {
   padding-top: 10px;
 }
 
@@ -1060,26 +1126,21 @@ article .article-metadata {
  *  Projects
  **************************************************/
 
-#projects.home-section li {
+.project-widget-simple li {
   margin-bottom: 1rem;
 }
 
-#projects.home-section li:last-of-type {
+.project-widget-simple li:last-of-type {
   margin-bottom: 0;
 }
 
-#projects.home-section .project-title {
+.project-widget-simple .project-title {
   margin-bottom: 6px;
 }
 
-#projects.home-section .project-summary {
+.project-widget-simple .project-summary {
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
-}
-
-#projects.home-section .project-tags {
-  font-size: 0.75rem;
-  color: #9c9c9c;
 }
 
 .projects-container {
@@ -1095,6 +1156,14 @@ article .article-metadata {
 
 .project-item {
   margin-bottom: 1.5rem;
+}
+
+.project-showcase .project-item {
+  margin-bottom: 3rem;
+}
+
+.project-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .isotope-item {
@@ -1228,24 +1297,24 @@ article .article-metadata {
  *  Contact
  **************************************************/
 
-#contact.home-section .fa-ul {
+.contact-widget .fa-ul {
   margin-left: 3.14285714rem; /* Must be > `fa-2x` icon size. */
 }
 
-#contact.home-section .fa-li {
+.contact-widget .fa-li {
   position: absolute;
-  left: -3.14285714rem; /* Negative of `#contact.home-section .fa-ul` margin. */
+  left: -3.14285714rem; /* Negative of `.contact-widget .fa-ul` margin. */
   width: 2rem; /* Match `fa-2x` icon size. */
   top: 0.14285714em; /* Default FA value. */
   text-align: center;
 }
 
-#contact.home-section li {
+.contact-widget li {
   padding-top: 0.8rem; /* Align text with bottom of `fa-2x` icon. */
   margin-bottom: 0.3rem;
 }
 
-#contact.home-section li:last-of-type {
+.contact-widget li:last-of-type {
   margin-bottom: 0;
 }
 
@@ -1787,7 +1856,7 @@ div.alert a {
       position: -webkit-sticky;
       position: sticky;
       top: 51px;
-      z-index: 1000;
+      z-index: 10;
       height: calc(100vh - 51px)
     }
   }
@@ -1802,7 +1871,7 @@ div.alert a {
       position: -webkit-sticky;
       position: sticky;
       top: 71px;
-      z-index: 1000;
+      z-index: 10;
       height: calc(100vh - 71px)
     }
   }
@@ -1988,6 +2057,7 @@ body.dark,
 .dark .form-control,
 .dark .form-control:focus {
   color: rgb(248, 248, 242);
+  background: rgb(40, 42, 54);
 }
 
 .dark .form-control {

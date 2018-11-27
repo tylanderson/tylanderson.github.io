@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.0.0">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Tyler Anderson">
 
   
@@ -61,6 +61,8 @@
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -68,7 +70,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One|Ubuntu,400italic,700|Ubntu+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -126,6 +128,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -209,6 +242,12 @@
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
       </ul>
 
     </div>
@@ -268,11 +307,21 @@
         
           
         
+        
+        
+        
+        
         <li>
-          <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" target="_blank" rel="noopener">
+          <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" >
             <i class="fas fa-envelope big-icon"></i>
           </a>
         </li>
+        
+        
+        
+        
+          
+        
         
         
         
@@ -288,6 +337,12 @@
         
         
         
+        
+        
+        
+        
+          
+        
         <li>
           <a itemprop="sameAs" href="https://www.researchgate.net/profile/Tyler_Anderson7" target="_blank" rel="noopener">
             <i class="ai ai-researchgate big-icon"></i>
@@ -299,8 +354,14 @@
         
           
         
+        
+        
+        
+        
+          
+        
         <li>
-          <a itemprop="sameAs" href="//github.com/tylanderson" target="_blank" rel="noopener">
+          <a itemprop="sameAs" href="//github.com/tylanderson" >
             <i class="fab fa-github big-icon"></i>
           </a>
         </li>
@@ -596,6 +657,151 @@
   
   
   
+  <section id="projects" class="home-section">
+    <div class="container">
+      
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+
+    <h1>Projects</h1>
+    
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+
+
+    
+
+    
+
+      
+
+      
+      
+      
+      
+        
+      
+
+      <span class="d-none default-project-filter">*</span>
+
+      
+      
+      <div class="project-toolbar">
+        <div class="project-filters">
+          <div class="btn-toolbar">
+            <div class="btn-group flex-wrap">
+              
+                
+                
+                
+                  
+                
+                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Vector" class="btn btn-primary btn-lg">Vector</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Raster" class="btn btn-primary btn-lg">Raster</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+    <div class="row isotope projects-container js-layout-masonry ">
+      
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Vector">
+  <div class="card">
+    
+    
+    <a href="/project/hurricane-risk/"  class="card-image hover-overlay">
+      <img src="/project/hurricane-risk/featured_hu205aa0ef1cc6f3941ecf04bd048f9cb3_1418434_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="/project/hurricane-risk/" >Hurricane Risk</a></h4>
+      <div class="card-desription">
+        <p>Hurricane Risk Index for Populations in Florida</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Raster">
+  <div class="card">
+    
+    
+    <a href="/project/central-america-landchange/"  class="card-image hover-overlay">
+      <img src="/project/central-america-landchange/featured_hu9c0c3efbfb917afc1ba3619fedb00659_1548511_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="/project/central-america-landchange/" >Mexico Land Change</a></h4>
+      <div class="card-desription">
+        <p>Transtion Potential of Land in Mexico in 2030</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+      
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
   <section id="contact" class="home-section">
     <div class="container">
       
@@ -603,7 +809,7 @@
 
 
 
-<div class="row">
+<div class="row contact-widget">
   <div class="col-12 col-lg-4 section-heading">
     <h1>Contact</h1>
     
@@ -615,6 +821,7 @@
 
     
     
+      
       
     
 
@@ -659,7 +866,7 @@
       
       <li>
         <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Jefferson 123 950 Main St Worcester, MA</span>
+        <span id="person-address" itemprop="address">950 Main Street Worcester, MA</span>
       </li>
       
 
@@ -667,6 +874,16 @@
 
     </ul>
 
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="42.250927">
+      <input id="map-lng" value="-71.821607">
+      <input id="map-dir" value="950 Main Street Worcester, MA">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
     
 
   </div>
@@ -757,10 +974,9 @@
       
     
 
-    <script src="/js/hugo-academic.js"></script>
     
-
     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -778,7 +994,7 @@
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -812,10 +1028,21 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
     
 
   </body>

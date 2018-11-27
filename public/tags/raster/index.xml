@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raster on Tyler Anderson</title>
+    <link>/tags/raster/</link>
+    <description>Recent content in Raster on Tyler Anderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Tyler Anderson</copyright>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/raster/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mexico Land Change</title>
+      <link>/project/central-america-landchange/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/central-america-landchange/</guid>
+      <description> Land Cover Transition Potentials in Mexico for 2030 </description>
+    </item>
+    
+  </channel>
+</rss>

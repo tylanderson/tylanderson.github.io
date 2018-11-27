@@ -34,7 +34,7 @@ hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 
 # Get last modified date for content from Git?
-enableGitInfo = false
+enableGitInfo = true
 
 [outputs]
   home = [ "HTML", "CSS", "RSS", "JSON" ]
@@ -63,7 +63,7 @@ enableGitInfo = false
 
   # Details for the Contact Widget
   email = "TylAnderson@clarku.edu"
-  address = "Jefferson 123 950 Main St Worcester, MA"
+  address = "950 Main Street Worcester, MA"
   office_hours = ""
   phone = "651 675 8496"
   skype = ""
@@ -89,10 +89,10 @@ enableGitInfo = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
+  map = 2
   map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  latitude = "42.250927"
+  longitude = "-71.821607"
   zoom = 15
 
   # SITE SETUP
@@ -103,7 +103,7 @@ enableGitInfo = false
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "custom1"
+  font = "default"
 
   # Description for social sharing and search engines. If undefined, author role is used in place.
   description = ""
@@ -346,14 +346,3 @@ enableGitInfo = false
 [languages.en]
   languageCode = "en-us"
 
-# Uncomment the lines below to configure your website in a second language.
-#[languages.zh]
-#  languageCode = "zh-Hans"
-#  title = "Chinese website title..."
-#  [languages.zh.params]
-#    name = "Your name in Chinese..."
-#    role = "Your role in Chinese..."
-#  [[languages.zh.menu.main]]
-#    name = "Wo"
-#    url = "#about"
-#    weight = 1

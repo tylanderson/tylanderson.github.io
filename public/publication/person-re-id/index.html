@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.0.0">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Tyler Anderson">
 
   
@@ -60,6 +60,8 @@
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -67,7 +69,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One|Ubuntu,400italic,700|Ubntu+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -116,7 +118,7 @@
   
   <meta property="article:published_time" content="2015-09-01T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2015-09-01T00:00:00-04:00">
+  <meta property="article:modified_time" content="2018-10-25T00:23:00-04:00">
   
 
   
@@ -127,6 +129,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -210,6 +243,12 @@
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
       </ul>
 
     </div>
@@ -263,9 +302,11 @@
 
   <span class="article-date">
     
+        Last updated on
+    
     <meta content="2015-09-01 00:00:00 -0400 EDT" itemprop="datePublished">
-    <time datetime="2015-09-01 00:00:00 -0400 EDT" itemprop="dateModified">
-      Sep 1, 2015
+    <time datetime="2018-10-25 00:23:00 -0400 EDT" itemprop="dateModified">
+      Oct 25, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -282,6 +323,65 @@
   
 
 </div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
 
         
@@ -358,9 +458,11 @@
 
   <span class="article-date">
     
+        Last updated on
+    
     <meta content="2015-09-01 00:00:00 -0400 EDT" itemprop="datePublished">
-    <time datetime="2015-09-01 00:00:00 -0400 EDT" itemprop="dateModified">
-      Sep 1, 2015
+    <time datetime="2018-10-25 00:23:00 -0400 EDT" itemprop="dateModified">
+      Oct 25, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -420,6 +522,65 @@
 
 </div>
 
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
 </div>
 
 
@@ -472,55 +633,6 @@
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
             September, 2015
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
-    <div class="row" style="padding-top: 10px">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading" style="line-height:34px;">Links</div>
-          <div class="col-12 col-md-9">
-
-            
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
         </div>
       </div>
@@ -615,8 +727,7 @@
     
     
     
-    
-    <script src="/js/mathjax-config.83b2a65cc1ca1f6c27c3f6943cbc37b88095532149bd65090e1ace0fafa090299c14cc980ebb55fed8a2b67507f355d0ff8f2e7beb5d5b7cd5903f53c74df423.js" integrity="sha512-g7KmXMHKH2wnw/aUPLw3uICVUyFJvWUJDhrOD6&#43;gkCmcFMyYDrtV/tiitnUH81XQ/48ue&#43;tdW3zVkD9Tx030Iw=="></script>
+    <script src="/js/mathjax-config.js"></script>
     
 
     
@@ -640,10 +751,9 @@
       
     
 
-    <script src="/js/hugo-academic.js"></script>
     
-
     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -661,7 +771,7 @@
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -695,10 +805,21 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
     
 
   </body>

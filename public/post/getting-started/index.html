@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.0.0">
-  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Tyler Anderson">
 
   
@@ -60,6 +60,8 @@
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -67,7 +69,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One|Ubuntu,400italic,700|Ubntu+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -116,7 +118,7 @@
   
   <meta property="article:published_time" content="2016-04-20T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2018-01-13T00:00:00-05:00">
+  <meta property="article:modified_time" content="2018-10-25T00:23:00-04:00">
   
 
   
@@ -127,6 +129,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -210,6 +243,12 @@
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
       </ul>
 
     </div>
@@ -265,8 +304,8 @@
         Last updated on
     
     <meta content="2016-04-20 00:00:00 -0400 EDT" itemprop="datePublished">
-    <time datetime="2018-01-13 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 13, 2018
+    <time datetime="2018-10-25 00:23:00 -0400 EDT" itemprop="dateModified">
+      Oct 25, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -288,6 +327,25 @@
   
 
 </div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
 
         
@@ -365,8 +423,8 @@
         Last updated on
     
     <meta content="2016-04-20 00:00:00 -0400 EDT" itemprop="datePublished">
-    <time datetime="2018-01-13 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 13, 2018
+    <time datetime="2018-10-25 00:23:00 -0400 EDT" itemprop="dateModified">
+      Oct 25, 2018
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -431,6 +489,25 @@
 
 </div>
 
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 </div>
 
 
@@ -479,78 +556,13 @@
 
 
 <div class="gallery">
+
   
   
   
   
-    
+
   
-  <a data-fancybox="gallery-1" data-caption="Default" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Ocean" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Forest" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Dark" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Apogee" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-apogee.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-apogee.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="1950s" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Coffee theme with Playfair font" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png">
-  </a>
-  
-  
-  
-  
-    
-  
-  <a data-fancybox="gallery-1" data-caption="Cupcake" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-cupcake.png">
-    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-cupcake.png">
-  </a>
   
 </div>
 
@@ -689,10 +701,14 @@ git submodule update --init --recursive
       
       
       
+        
+      
+      
+      
       
       
       <li>
-        <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" target="_blank" rel="noopener">
+        <a itemprop="sameAs" href="mailto:TylAnderson@clarku.edu" >
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -700,7 +716,13 @@ git submodule update --init --recursive
       
       
       
+        
       
+      
+      
+      
+      
+        
       
       <li>
         <a itemprop="sameAs" href="https://www.linkedin.com/in/tylanderson/" target="_blank" rel="noopener">
@@ -711,6 +733,12 @@ git submodule update --init --recursive
       
       
       
+      
+      
+      
+      
+        
+      
       <li>
         <a itemprop="sameAs" href="https://www.researchgate.net/profile/Tyler_Anderson7" target="_blank" rel="noopener">
           <i class="ai ai-researchgate"></i>
@@ -720,10 +748,16 @@ git submodule update --init --recursive
       
       
       
+        
       
+      
+      
+      
+      
+        
       
       <li>
-        <a itemprop="sameAs" href="//github.com/tylanderson" target="_blank" rel="noopener">
+        <a itemprop="sameAs" href="//github.com/tylanderson" >
           <i class="fab fa-github"></i>
         </a>
       </li>
@@ -825,10 +859,9 @@ git submodule update --init --recursive
       
     
 
-    <script src="/js/hugo-academic.js"></script>
     
-
     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -846,7 +879,7 @@ git submodule update --init --recursive
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -880,10 +913,21 @@ git submodule update --init --recursive
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
     
 
   </body>
