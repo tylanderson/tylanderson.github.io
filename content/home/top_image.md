@@ -9,14 +9,13 @@ date = 2016-04-20T00:00:00
 
 
 # Order that this section will appear in.
-weight = 3
+weight = 60
 
 [header]
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "headers/Cover_CLASLITE2.jpg"
   overlay_filter = 0.2 # Darken the image. Value in range 0-1.
 +++
-
 &nbsp;
 
 &nbsp;
