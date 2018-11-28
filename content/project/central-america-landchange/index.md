@@ -19,11 +19,14 @@ tags = ["Raster"]
   focal_point = "Smart"
   
   preview_only = true
-
-[header]
-image = "projects/central-america-landchange/header.jpg"
-caption = "Transition Potential Around Settlements in Yucatan"
-
 +++
 
-## Land Cover Transition Potentials in Mexico for 2030
+## **Land Cover Transition Potentials in Mexico for 2030**
+This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agrigriculre or Settlement.
+We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett's Land Change Modeler tool.
+
+{{< figure library="1" src="projects/central-america-landchange/MX_landcover.jpg" title="Land Cover in 2015" >}}
+
+{{< figure library="1" src="projects/central-america-landchange/2030_SoftTransition_2.jpg" title="2030 Transition Potential" >}}
+
+{{< figure library="1" src="projects/central-america-landchange/MX_landcover_2030_2.jpg" title="Predicted 2030 Land Cover" >}}

@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Haiti Cholera Health Sites</title>
+      <link>/project/haiti-cholera/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/haiti-cholera/</guid>
+      <description> Accessibility of Health Sites in Artibonite, Haiti </description>
+    </item>
+    
+    <item>
       <title>Hurricane Risk</title>
       <link>/project/hurricane-risk/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
@@ -22,12 +31,40 @@
     </item>
     
     <item>
+      <title>Massachusetts Forest Cover</title>
+      <link>/project/ma-forestcover/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/ma-forestcover/</guid>
+      <description> Forest Cover Change in Massachusetts for 2015 </description>
+    </item>
+    
+    <item>
       <title>Mexico Land Change</title>
       <link>/project/central-america-landchange/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/central-america-landchange/</guid>
-      <description> Land Cover Transition Potentials in Mexico for 2030 </description>
+      <description> Land Cover Transition Potentials in Mexico for 2030 This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agrigriculre or Settlement. We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool.
+ Land Cover in 2015    2030 Transition Potential    Predicted 2030 Land Cover   </description>
+    </item>
+    
+    <item>
+      <title>Sian Ka&#39;an Forest Change</title>
+      <link>/project/sian-kaan-hurricane/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/sian-kaan-hurricane/</guid>
+      <description> Changes in Forest Cover in Sian Ka&amp;rsquo;an Biosphere Reserve from Fire, Hurricanes, and Logging </description>
+    </item>
+    
+    <item>
+      <title>USVI Hurricane Water Quality</title>
+      <link>/project/nasa-usvi-hurricane/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/nasa-usvi-hurricane/</guid>
+      <description> Changes in Water Quality in the USVI after the 2017 Hurricane Season </description>
     </item>
     
   </channel>

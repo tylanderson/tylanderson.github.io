@@ -11,12 +11,36 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Haiti Cholera Health Sites</title>
+      <link>/project/haiti-cholera/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/haiti-cholera/</guid>
+      <description>
+
+&lt;h2 id=&#34;accessibility-of-health-sites-in-artibonite-haiti&#34;&gt;Accessibility of Health Sites in Artibonite, Haiti&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hurricane Risk</title>
       <link>/project/hurricane-risk/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/hurricane-risk/</guid>
       <description>&lt;p&gt;This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Massachusetts Forest Cover</title>
+      <link>/project/ma-forestcover/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/ma-forestcover/</guid>
+      <description>
+
+&lt;h2 id=&#34;forest-cover-change-in-massachusetts-for-2015&#34;&gt;Forest Cover Change in Massachusetts for 2015&lt;/h2&gt;
 </description>
     </item>
     
@@ -28,7 +52,88 @@
       <guid>/project/central-america-landchange/</guid>
       <description>
 
-&lt;h2 id=&#34;land-cover-transition-potentials-in-mexico-for-2030&#34;&gt;Land Cover Transition Potentials in Mexico for 2030&lt;/h2&gt;
+&lt;h2 id=&#34;land-cover-transition-potentials-in-mexico-for-2030&#34;&gt;&lt;strong&gt;Land Cover Transition Potentials in Mexico for 2030&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agrigriculre or Settlement.
+We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Land Cover in 2015&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/2030_SoftTransition_2.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;2030 Transition Potential&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover_2030_2.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Predicted 2030 Land Cover&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sian Ka&#39;an Forest Change</title>
+      <link>/project/sian-kaan-hurricane/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/sian-kaan-hurricane/</guid>
+      <description>
+
+&lt;h2 id=&#34;changes-in-forest-cover-in-sian-ka-an-biosphere-reserve-from-fire-hurricanes-and-logging&#34;&gt;Changes in Forest Cover in Sian Ka&amp;rsquo;an Biosphere Reserve from Fire, Hurricanes, and Logging&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>USVI Hurricane Water Quality</title>
+      <link>/project/nasa-usvi-hurricane/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/nasa-usvi-hurricane/</guid>
+      <description>
+
+&lt;h2 id=&#34;changes-in-water-quality-in-the-usvi-after-the-2017-hurricane-season&#34;&gt;Changes in Water Quality in the USVI after the 2017 Hurricane Season&lt;/h2&gt;
 </description>
     </item>
     
@@ -58,7 +163,137 @@
       <pubDate>Thu, 28 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Effective date: November 28, 2018&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tyler Anderson (&amp;ldquo;us&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) operates the www.tylanderson.com website (the &amp;ldquo;Service&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy for Tyler Anderson is managed through Free Privacy Policy Website.&lt;/p&gt;
+
+&lt;p&gt;We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from www.tylanderson.com&lt;/p&gt;
+
+&lt;h2 id=&#34;information-collection-and-use&#34;&gt;Information Collection And Use&lt;/h2&gt;
+
+&lt;p&gt;We collect several different types of information for various purposes to provide and improve our Service to you.&lt;/p&gt;
+
+&lt;h3 id=&#34;types-of-data-collected&#34;&gt;Types of Data Collected&lt;/h3&gt;
+
+&lt;h4 id=&#34;personal-data&#34;&gt;Personal Data&lt;/h4&gt;
+
+&lt;p&gt;While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (&amp;ldquo;Personal Data&amp;rdquo;). Personally identifiable information may include, but is not limited to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cookies and Usage Data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;usage-data&#34;&gt;Usage Data&lt;/h4&gt;
+
+&lt;p&gt;We may also collect information how the Service is accessed and used (&amp;ldquo;Usage Data&amp;rdquo;). This Usage Data may include information such as your computer&amp;rsquo;s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.&lt;/p&gt;
+
+&lt;h4 id=&#34;tracking-cookies-data&#34;&gt;Tracking &amp;amp; Cookies Data&lt;/h4&gt;
+
+&lt;p&gt;We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.&lt;/p&gt;
+
+&lt;p&gt;Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.&lt;/p&gt;
+
+&lt;p&gt;You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.&lt;/p&gt;
+
+&lt;h4 id=&#34;examples-of-cookies-we-use&#34;&gt;Examples of Cookies we use:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Session Cookies.&lt;/strong&gt; We use Session Cookies to operate our Service.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preference Cookies.&lt;/strong&gt; We use Preference Cookies to remember your preferences and various settings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security Cookies.&lt;/strong&gt; We use Security Cookies for security purposes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;use-of-data&#34;&gt;Use of Data&lt;/h3&gt;
+
+&lt;p&gt;Tyler Anderson uses the collected data for various purposes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To provide and maintain the Service&lt;/li&gt;
+&lt;li&gt;To notify you about changes to our Service&lt;/li&gt;
+&lt;li&gt;To allow you to participate in interactive features of our Service when you choose to do so&lt;/li&gt;
+&lt;li&gt;To provide customer care and support&lt;/li&gt;
+&lt;li&gt;To provide analysis or valuable information so that we can improve the Service&lt;/li&gt;
+&lt;li&gt;To monitor the usage of the Service&lt;/li&gt;
+&lt;li&gt;To detect, prevent and address technical issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;transfer-of-data&#34;&gt;Transfer Of Data&lt;/h3&gt;
+
+&lt;p&gt;Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.&lt;/p&gt;
+
+&lt;p&gt;If you are located outside United States and choose to provide information to us, please note that we transfer the data, including Personal Data, to United States and process it there.&lt;/p&gt;
+
+&lt;p&gt;Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.&lt;/p&gt;
+
+&lt;p&gt;Tyler Anderson will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.&lt;/p&gt;
+
+&lt;h3 id=&#34;disclosure-of-data&#34;&gt;Disclosure Of Data&lt;/h3&gt;
+
+&lt;h4 id=&#34;legal-requirements&#34;&gt;Legal Requirements&lt;/h4&gt;
+
+&lt;p&gt;Tyler Anderson may disclose your Personal Data in the good faith belief that such action is necessary to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To comply with a legal obligation&lt;/li&gt;
+&lt;li&gt;To protect and defend the rights or property of Tyler Anderson&lt;/li&gt;
+&lt;li&gt;To prevent or investigate possible wrongdoing in connection with the Service&lt;/li&gt;
+&lt;li&gt;To protect the personal safety of users of the Service or the public&lt;/li&gt;
+&lt;li&gt;To protect against legal liability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;security-of-data&#34;&gt;Security Of Data&lt;/h3&gt;
+
+&lt;p&gt;The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.&lt;/p&gt;
+
+&lt;h3 id=&#34;service-providers&#34;&gt;Service Providers&lt;/h3&gt;
+
+&lt;p&gt;We may employ third party companies and individuals to facilitate our Service (&amp;ldquo;Service Providers&amp;rdquo;), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.&lt;/p&gt;
+
+&lt;p&gt;These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.&lt;/p&gt;
+
+&lt;h4 id=&#34;analytics&#34;&gt;Analytics&lt;/h4&gt;
+
+&lt;p&gt;We may use third-party Service Providers to monitor and analyze the use of our Service.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Google Analytics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.&lt;/p&gt;
+
+&lt;p&gt;You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.&lt;/p&gt;
+
+&lt;p&gt;For more information on the privacy practices of Google, please visit the Google Privacy &amp;amp; Terms web page: &lt;a href=&#34;https://policies.google.com/privacy?hl=en&#34; target=&#34;_blank&#34;&gt;https://policies.google.com/privacy?hl=en&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;links-to-other-sites&#34;&gt;Links To Other Sites&lt;/h3&gt;
+
+&lt;p&gt;Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party&amp;rsquo;s site. We strongly advise you to review the Privacy Policy of every site you visit.&lt;/p&gt;
+
+&lt;p&gt;We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.&lt;/p&gt;
+
+&lt;h3 id=&#34;children-s-privacy&#34;&gt;Children&amp;rsquo;s Privacy&lt;/h3&gt;
+
+&lt;p&gt;Our Service does not address anyone under the age of 18 (&amp;ldquo;Children&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.&lt;/p&gt;
+
+&lt;h3 id=&#34;changes-to-this-privacy-policy&#34;&gt;Changes To This Privacy Policy&lt;/h3&gt;
+
+&lt;p&gt;We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.&lt;/p&gt;
+
+&lt;p&gt;We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the &amp;ldquo;effective date&amp;rdquo; at the top of this Privacy Policy.&lt;/p&gt;
+
+&lt;p&gt;You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.&lt;/p&gt;
+
+&lt;h3 id=&#34;contact-us&#34;&gt;Contact Us&lt;/h3&gt;
+
+&lt;p&gt;If you have any questions about this Privacy Policy, please contact us:&lt;/p&gt;
+
+&lt;p&gt;By visiting this page on our website: www.tylanderson.com&lt;/p&gt;
 </description>
     </item>
     
