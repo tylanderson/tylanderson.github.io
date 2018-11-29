@@ -12,7 +12,7 @@ weight = 5
   interests = [
     "Remote Sensing",
     "Forest Cover and Land Use Change",
-    "Coastal Ecology"
+    "Coastal Ecology","Python","Open Source GIS","Data Fusion"
   ]
 
 # List your qualifications (such as academic degrees).

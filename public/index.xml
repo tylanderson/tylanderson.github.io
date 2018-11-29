@@ -18,7 +18,133 @@
       <guid>/project/haiti-cholera/</guid>
       <description>
 
-&lt;h2 id=&#34;accessibility-of-health-sites-in-artibonite-haiti&#34;&gt;Accessibility of Health Sites in Artibonite, Haiti&lt;/h2&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In 2010, a major earthquake struck Haiti, causing widespread damage. Following the earthquake, a massive cholera outbreak occured. The first case was in October 2010, and by March 2011 ~4,500 people had already died as a result of cholera. Since 2010, ~9,750 people have died from cholera, and it has infected more than 800,000 people.&lt;/p&gt;
+
+&lt;p&gt;The 2010 Haitian Cholera outbreak was the first modern outbreak of cholera. The first cases occured in Artibonite, Haiti&amp;rsquo;s largest department with an estimated population of 1.7 million people. The outbreak began in the Artibonite river, due to untreated sewage contaminating the river from a UN Peacekeeping Camp, which was set up to provide relief from the 2010 earthquake. As the river is a drinking source for many people, and due to Haiti&amp;rsquo;s poor drinking water and sanitation infrastructure, Cholera spread rapidly. Today Artibonite continues to be the department with the most Cholera cases in Haiti.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/haiti-cholera/StudyArea.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;data-methods&#34;&gt;Data &amp;amp; Methods&lt;/h2&gt;
+
+&lt;p&gt;Data for this project was retrived from publicly accessible and open-source sites. Most data came from the Humanitarian Data Excange (HDX), and Open Street Maps (OSM).&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;OSM Roads&lt;/td&gt;
+&lt;td&gt;Open Street Maps&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://download.geofabrik.de/central-america/haiti-and-domrep.html&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;CNIGS Roads&lt;/td&gt;
+&lt;td&gt;Centre National de l&amp;rsquo;Information Géo-Spatiale&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://data.humdata.org/dataset/haiti-roads&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Health Sites&lt;/td&gt;
+&lt;td&gt;Global Health Site Mapping Project&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://data.humdata.org/dataset/haiti-healthsites&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Administrative Boundries&lt;/td&gt;
+&lt;td&gt;OCHA Haiti&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://data.humdata.org/dataset/hti-polbndl-adm1-cnigs-zip&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Population&lt;/td&gt;
+&lt;td&gt;WorldPop&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.worldpop.org.uk/data/summary/?id=172&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DEM&lt;/td&gt;
+&lt;td&gt;STRM&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www2.jpl.nasa.gov/srtm/&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;Preprocessing:&lt;/strong&gt; The road network, due to being open sourced, had many flaws that need to be fixed. By extending the lines using editor in ArcGIS, and Planarizing the road features, a capable road dataset was built.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Merged OSM and CNIGS road datasets&lt;/li&gt;
+&lt;li&gt;Extend Lines Tool&lt;/li&gt;
+&lt;li&gt;Trim Lines Tool&lt;/li&gt;
+&lt;li&gt;Planarize Lines
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Network Dataset:&lt;/strong&gt; After fixes, the road network for analysis was built using simple distance based cost, and service areas were generated for three intervals; 0km - 2km, 2km - 5km, and 5km - 8km. Cholera health sites within 5km was our target, being ~1 hour walking time, with 8km being on the outer fringes of health site accessibility. We chose to use distances as few people in Haiti own their own car, and rural areas have to walk to health sites. Additionally, previous research had looked at health sites within 5km euclidean distance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Health Site Suitability:&lt;/strong&gt; Using suitability variables new health site suitability was calculated for areas outside of current service areas. The weighted overlay tool in ArcGIS was suitable for this. The weights were set as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Population: 35%&lt;/li&gt;
+&lt;li&gt;Distance to Roads: 25%&lt;/li&gt;
+&lt;li&gt;Distance from Service Areas: 25%&lt;/li&gt;
+&lt;li&gt;Slope: 15%&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/haiti-cholera/Network%20Anlysis.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/haiti-cholera/HealthSiteSuitability.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/haiti-cholera/TownSuitability.png&#34; /&gt;
+
+
+&lt;/figure&gt;
 </description>
     </item>
     
@@ -28,7 +154,63 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/hurricane-risk/</guid>
-      <description>&lt;p&gt;This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts. This is based off historical data, and may change in the future.&lt;/p&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Methods.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm:
+$$ HRI=\frac{(W_{a}*SoVI)+(W_{b}*HurrStrike)+(W_{c}*AvgSpeed)}{W_{a}+W_{b}+W_{c}} $$
+Weights were set so that the hurricane data was not over represented: $W_{a}=0.5$, $W_{b}=0.25$, $W_{c}=0.25$.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Inputs.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+Individual HRI variables, and Hot Spot analysis for each. Hurricane based variables have a large hot spot in South Florida, while SoVI shows a hot spot of vulnerability just north of Florida.&lt;/p&gt;
+
+&lt;h2 id=&#34;hri-results&#34;&gt;HRI Results&lt;/h2&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Map.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+The Hurricane Risk Index product compares total risk of a county. This can account for areas that may have high risk in one category, but low risk in another. This index ranges from 0 to 1, with 0 having no risk in each variable, and 1 having the highest risk in each variable. (Our HRI ranged from near 0 to 0.91).
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_HotSpot_146080_Map.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+Running Hot Spot analysis on the HRI reveals that South Florida has the highest hurricane risk index, as well as a large hot spot of high HRI. This is the area most often struck by hurricanes, so it is important to know the risks in these areas. There is a cold spot just south of Jacksonville, which could indicate those communities are less at risk of hurricane damage. While the SoVI data we used came at county level, it would be very interesting to create a new SoVI index and use to at the town level to see more detail in HRI maps.&lt;/p&gt;
 </description>
     </item>
     
@@ -40,7 +222,106 @@
       <guid>/project/ma-forestcover/</guid>
       <description>
 
-&lt;h2 id=&#34;forest-cover-change-in-massachusetts-for-2015&#34;&gt;Forest Cover Change in Massachusetts for 2015&lt;/h2&gt;
+&lt;p&gt;For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosyntheic vegatation, and non-photosynthetic vegatation) and forest cover maps. CLASlite is a semi-automated approach, user input is only data and thresholds for classification and masking, and most importantly, it&amp;rsquo;s FREE!
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/MA_CLASLITE.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/CLASLITE_Methods.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+CLASlite has a change detection step included, however we chose to use our own method of doing change detection, as we wanted to use multiple dates of Landsat 8 imagery to classify forest for greater confidence. Each Landsat scene had 3 images, which each were classified into forest cover maps from fractional cover using CLASlite. Confidence of forest was calculated using the equation, $Confidence=\frac{N_{f}-N_{n_f}}{N_{f}+N_{n_f}}$, where $N_{f}$ is the number of times a pixel was classified as forest and $N_{n_f}$ is the number of times a pixel was classified as non-forest. This confidence map was then reclassified to forest cover where values 0 to 0.6 are non-forest, and 0.6 to 1 are forest.&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;h3 id=&#34;forest-cover&#34;&gt;Forest Cover&lt;/h3&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2009_Towns.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2015_Towns.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/MA_Validation.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+Training Points were generated at 968 locations, stratified by EcoRegion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by EcoRegion, with overall accuracy at 87%.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/ForestLoss_and_Persistance.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+Forest and Non-Forest cover persistance, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
+
+&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss_StdDev.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -52,11 +333,7 @@
       <guid>/project/central-america-landchange/</guid>
       <description>
 
-&lt;h2 id=&#34;land-cover-transition-potentials-in-mexico-for-2030&#34;&gt;&lt;strong&gt;Land Cover Transition Potentials in Mexico for 2030&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agrigriculre or Settlement.
-We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool.&lt;/p&gt;
-
+&lt;p&gt;This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used &lt;a href=&#34;http://maps.elie.ucl.ac.be/CCI/viewer/&#34; target=&#34;_blank&#34;&gt;ESA CCI Land Cover Data&lt;/a&gt;, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.
 
 
 
@@ -67,15 +344,59 @@ We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&am
 &lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover.jpg&#34; /&gt;
 
 
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Land Cover in 2015&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
 &lt;/figure&gt;
 
 
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Methods.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Using change analysis, we can see how catagories are lossing area and gaining area. Forests had the highest net loss out of all catagories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_GainLoss.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Skill.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;
+The Transition Potential Sub-Models, shown above, were built using MLP. We tested each variable for significance in the model, in order to determine which variables to use in MLP modeling for each of the sub-models. The skill and accuracy of each model is shown, as well as the variables that were used to model transitions. Forest to Agriculture was the hardest sub-model to create, mainly due to the fact that it is the largest transition, and therefore the most difficult. While most of the transition from forest to agriculture is in south-east Mexico, it is also widely spread. Grassland to Agriculture was the transition that had the highest skill score, but is the smallest transition. Transition Potentials for each sub-model are shown below.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Transitions.jpg&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;overall-transition-potential-and-modeled-2030-land-cover&#34;&gt;Overall Transition Potential and Modeled 2030 Land Cover&lt;/h2&gt;
+
+&lt;p&gt;
 
 
   
@@ -85,14 +406,8 @@ We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&am
 &lt;img src=&#34;/img/projects/central-america-landchange/2030_SoftTransition_2.jpg&#34; /&gt;
 
 
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;2030 Transition Potential&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
 &lt;/figure&gt;
-
+The main area with high transition potential is the Yucatan Penisula, which is concerning due to the fact that it is an area with very high biodiversity and holds vast biosphere reserves for this reason. Meanwhile Northern Mexico has very low transition potential. This map can be used to target areas that may be under threat of conversion in order to create conservation areas.
 
 
 
@@ -103,25 +418,7 @@ We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&am
 &lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover_2030_2.jpg&#34; /&gt;
 
 
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Predicted 2030 Land Cover&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sian Ka&#39;an Forest Change</title>
-      <link>/project/sian-kaan-hurricane/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>/project/sian-kaan-hurricane/</guid>
-      <description>
-
-&lt;h2 id=&#34;changes-in-forest-cover-in-sian-ka-an-biosphere-reserve-from-fire-hurricanes-and-logging&#34;&gt;Changes in Forest Cover in Sian Ka&amp;rsquo;an Biosphere Reserve from Fire, Hurricanes, and Logging&lt;/h2&gt;
+&lt;/figure&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -133,7 +430,83 @@ We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&am
       <guid>/project/nasa-usvi-hurricane/</guid>
       <description>
 
-&lt;h2 id=&#34;changes-in-water-quality-in-the-usvi-after-the-2017-hurricane-season&#34;&gt;Changes in Water Quality in the USVI after the 2017 Hurricane Season&lt;/h2&gt;
+&lt;p&gt;The US Virgin Islands, located just East of Puerto Rico in the Carribean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collabarated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowning the impact of major hurricanes such as Irma and Maria is vital.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_TechImage.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch proccess the data for all 200+ images analyzed in this study.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Sats.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normals. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Chla.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_SPM.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Turb.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/ResidenceTime.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
 </description>
     </item>
     
