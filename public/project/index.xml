@@ -18,7 +18,8 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/haiti-cholera/</guid>
-      <description> Accessibility of Health Sites in Artibonite, Haiti </description>
+      <description>Introduction In 2010, a major earthquake struck Haiti, causing widespread damage. Following the earthquake, a massive cholera outbreak occured. The first case was in October 2010, and by March 2011 ~4,500 people had already died as a result of cholera. Since 2010, ~9,750 people have died from cholera, and it has infected more than 800,000 people.
+The 2010 Haitian Cholera outbreak was the first modern outbreak of cholera. The first cases occured in Artibonite, Haiti&amp;rsquo;s largest department with an estimated population of 1.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/hurricane-risk/</guid>
-      <description>This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI.</description>
+      <description>This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts.</description>
     </item>
     
     <item>
@@ -36,7 +37,7 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/ma-forestcover/</guid>
-      <description> Forest Cover Change in Massachusetts for 2015 </description>
+      <description>For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosyntheic vegatation, and non-photosynthetic vegatation) and forest cover maps.</description>
     </item>
     
     <item>
@@ -45,17 +46,7 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/central-america-landchange/</guid>
-      <description> Land Cover Transition Potentials in Mexico for 2030 This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agrigriculre or Settlement. We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool.
- Land Cover in 2015    2030 Transition Potential    Predicted 2030 Land Cover   </description>
-    </item>
-    
-    <item>
-      <title>Sian Ka&#39;an Forest Change</title>
-      <link>/project/sian-kaan-hurricane/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>/project/sian-kaan-hurricane/</guid>
-      <description> Changes in Forest Cover in Sian Ka&amp;rsquo;an Biosphere Reserve from Fire, Hurricanes, and Logging </description>
+      <description>This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used ESA CCI Land Cover Data, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.</description>
     </item>
     
     <item>
@@ -64,7 +55,7 @@
       <pubDate>Tue, 20 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/project/nasa-usvi-hurricane/</guid>
-      <description> Changes in Water Quality in the USVI after the 2017 Hurricane Season </description>
+      <description>The US Virgin Islands, located just East of Puerto Rico in the Carribean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collabarated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowning the impact of major hurricanes such as Irma and Maria is vital.</description>
     </item>
     
   </channel>
