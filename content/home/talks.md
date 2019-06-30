@@ -17,7 +17,7 @@ count = 10
 #   0 = Simple
 #   1 = Detailed
 #   2 = Stream
-list_format = 2
+view = 2
 
 # Exclude talks that are shown in the Selected Talks widget?
 exclude_selected = false

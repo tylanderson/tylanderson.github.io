@@ -14,5 +14,5 @@ weight = 29
 #   0 = Simple
 #   1 = Detailed
 #   3 = Stream
-list_format = 0
+view = 0
 +++
