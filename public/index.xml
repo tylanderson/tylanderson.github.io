@@ -1,14 +1,349 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tyler Anderson on Tyler Anderson</title>
+    <title>Tyler Anderson</title>
     <link>/</link>
-    <description>Recent content in Tyler Anderson on Tyler Anderson</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content on Tyler Anderson</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Tyler Anderson</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; {year} Tyler Anderson</copyright>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0100</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>/courses/example/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/example/example1/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>/courses/example/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/example/example2/</guid>
+      <description>
+
+&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/jupyter/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
+
+&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
+hugo new  --kind post post/my-post
+cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+
+&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
+
+# Copy the contents of Untitled.md and append it to index.md:
+cat Untitled.md | tee -a index.md
+
+# Remove the temporary file:
+rm Untitled.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+
+&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
+
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/example/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Haiti Cholera Health Sites</title>
@@ -28,12 +363,16 @@
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/haiti-cholera/StudyArea.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/haiti-cholera/StudyArea.png&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;data-methods&#34;&gt;Data &amp;amp; Methods&lt;/h2&gt;
 
@@ -115,36 +454,48 @@
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/haiti-cholera/Network%20Anlysis.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/haiti-cholera/Network%20Anlysis.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/haiti-cholera/HealthSiteSuitability.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/haiti-cholera/HealthSiteSuitability.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/haiti-cholera/TownSuitability.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/haiti-cholera/TownSuitability.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 </description>
     </item>
     
@@ -163,12 +514,16 @@
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Methods.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Methods.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm:
 $$ HRI=\frac{(W_{a}*SoVI)+(W_{b}*HurrStrike)+(W_{c}*AvgSpeed)}{W_{a}+W_{b}+W_{c}} $$
 Weights were set so that the hurricane data was not over represented: $W_{a}=0.5$, $W_{b}=0.25$, $W_{c}=0.25$.
@@ -177,12 +532,16 @@ Weights were set so that the hurricane data was not over represented: $W_{a}=0.5
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Inputs.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Inputs.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Individual HRI variables, and Hot Spot analysis for each. Hurricane based variables have a large hot spot in South Florida, while SoVI shows a hot spot of vulnerability just north of Florida.&lt;/p&gt;
 
 &lt;h2 id=&#34;hri-results&#34;&gt;HRI Results&lt;/h2&gt;
@@ -192,24 +551,32 @@ Individual HRI variables, and Hot Spot analysis for each. Hurricane based variab
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Map.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_Map.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 The Hurricane Risk Index product compares total risk of a county. This can account for areas that may have high risk in one category, but low risk in another. This index ranges from 0 to 1, with 0 having no risk in each variable, and 1 having the highest risk in each variable. (Our HRI ranged from near 0 to 0.91).
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/hurricane-risk/HRI_HotSpot_146080_Map.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/hurricane-risk/HRI_HotSpot_146080_Map.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Running Hot Spot analysis on the HRI reveals that South Florida has the highest hurricane risk index, as well as a large hot spot of high HRI. This is the area most often struck by hurricanes, so it is important to know the risks in these areas. There is a cold spot just south of Jacksonville, which could indicate those communities are less at risk of hurricane damage. While the SoVI data we used came at county level, it would be very interesting to create a new SoVI index and use to at the town level to see more detail in HRI maps.&lt;/p&gt;
 </description>
     </item>
@@ -228,23 +595,31 @@ Running Hot Spot analysis on the HRI reveals that South Florida has the highest 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/MA_CLASLITE.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/MA_CLASLITE.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/CLASLITE_Methods.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/CLASLITE_Methods.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 CLASlite has a change detection step included, however we chose to use our own method of doing change detection, as we wanted to use multiple dates of Landsat 8 imagery to classify forest for greater confidence. Each Landsat scene had 3 images, which each were classified into forest cover maps from fractional cover using CLASlite. Confidence of forest was calculated using the equation, $Confidence=\frac{N_{f}-N_{n_f}}{N_{f}+N_{n_f}}$, where $N_{f}$ is the number of times a pixel was classified as forest and $N_{n_f}$ is the number of times a pixel was classified as non-forest. This confidence map was then reclassified to forest cover where values 0 to 0.6 are non-forest, and 0.6 to 1 are forest.&lt;/p&gt;
 
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
@@ -256,46 +631,62 @@ CLASlite has a change detection step included, however we chose to use our own m
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2009_Towns.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2009_Towns.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2015_Towns.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCover2015_Towns.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/MA_Validation.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/MA_Validation.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Training Points were generated at 968 locations, stratified by EcoRegion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by EcoRegion, with overall accuracy at 87%.
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/ForestLoss_and_Persistance.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/ForestLoss_and_Persistance.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Forest and Non-Forest cover persistance, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
 
 &lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
@@ -305,23 +696,31 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss.png&#34; &gt;
 
 
 &lt;/figure&gt;
 
 
 
+
   
+
+
+
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss_StdDev.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/ma-landcover/ForestCoverRateOfLoss_StdDev.png&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -339,23 +738,31 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
 
 
 
+
   
+
+
+
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_Methods.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Methods.jpg&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Using change analysis, we can see how catagories are lossing area and gaining area. Forests had the highest net loss out of all catagories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
 
@@ -363,36 +770,48 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_GainLoss.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_GainLoss.jpg&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;p&gt;
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_Skill.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Skill.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 The Transition Potential Sub-Models, shown above, were built using MLP. We tested each variable for significance in the model, in order to determine which variables to use in MLP modeling for each of the sub-models. The skill and accuracy of each model is shown, as well as the variables that were used to model transitions. Forest to Agriculture was the hardest sub-model to create, mainly due to the fact that it is the largest transition, and therefore the most difficult. While most of the transition from forest to agriculture is in south-east Mexico, it is also widely spread. Grassland to Agriculture was the transition that had the highest skill score, but is the smallest transition. Transition Potentials for each sub-model are shown below.
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_Transitions.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_Transitions.jpg&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;overall-transition-potential-and-modeled-2030-land-cover&#34;&gt;Overall Transition Potential and Modeled 2030 Land Cover&lt;/h2&gt;
 
@@ -401,24 +820,32 @@ The Transition Potential Sub-Models, shown above, were built using MLP. We teste
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/2030_SoftTransition_2.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/2030_SoftTransition_2.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
+
 The main area with high transition potential is the Yucatan Penisula, which is concerning due to the fact that it is an area with very high biodiversity and holds vast biosphere reserves for this reason. Meanwhile Northern Mexico has very low transition potential. This map can be used to target areas that may be under threat of conversion in order to create conservation areas.
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover_2030_2.jpg&#34; /&gt;
+&lt;img src=&#34;/img/projects/central-america-landchange/MX_landcover_2030_2.jpg&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -437,12 +864,16 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_TechImage.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_TechImage.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 &lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch proccess the data for all 200+ images analyzed in this study.&lt;/p&gt;
 
@@ -451,12 +882,16 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Sats.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Sats.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 &lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normals. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
 
@@ -467,46 +902,62 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Chla.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Chla.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_SPM.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_SPM.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Turb.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Turb.png&#34; &gt;
 
 
 &lt;/figure&gt;
+
 Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
 
 
 
   
 
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/ResidenceTime.png&#34; /&gt;
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/ResidenceTime.png&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -677,10 +1128,10 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
       
       <guid>/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
-
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
 &lt;/div&gt;
-
 
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 
@@ -695,18 +1146,20 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
     </item>
     
     <item>
-      <title>Academic: the website designer for Hugo</title>
+      <title>Academic: the website builder for Hugo</title>
       <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/post/getting-started/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Follow our easy &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/&#34; target=&#34;_blank&#34;&gt;step by step guide&lt;/a&gt; to learn how to build your own free website with Academic. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the personal demo&lt;/a&gt; or the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;business demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Setup Academic&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
@@ -715,6 +1168,7 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -722,22 +1176,42 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Key features:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
-&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
-&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
 
-&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
+&lt;p&gt;Academic comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
 
+&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+  
 
 
 &lt;div class=&#34;gallery&#34;&gt;
@@ -746,106 +1220,139 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
   
   
   
-
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
   
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-strawberry.png&#34; data-caption=&#34;Strawberry&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-strawberry_hu36b0b347fcca08bd39e2df22dcedbdfb_39532_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
   
 &lt;/div&gt;
 
 &lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
 
 &lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
-&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
-&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
-&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
-
-&lt;p&gt;Prerequisites:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd My_Website
-git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
 
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
-
-&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
-
-&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
-
-&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
-
-&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
 
@@ -856,256 +1363,46 @@ git submodule update --init --recursive
     </item>
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-id/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
+      <title>An example journal article</title>
+      <link>/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/person-re-id/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>An example conference paper</title>
+      <link>/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>
-
-
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+      <guid>/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
-      
-      <guid>/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>/slides/example-slides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/slides/example-slides/</guid>
-      <description>
 
-&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code block:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-
-&lt;p&gt;Block math:&lt;/p&gt;
-
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-  One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  Three
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
