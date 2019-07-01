@@ -69,4 +69,4 @@ user_groups:
 - Visitors
 ---
 
-Tyler Anderson is a MS Candidate in GIScience at the Clark University. His research interests include remote sensing of Forest Cover and Coastal Ecology.Current research involves using the Harmonized Landsat Sentinel-2 product for Gypsy Moth defoliation tracking. Previous research including updating a forest cover map of Massachusetts using semi-automated methods with CLASlite. 
+I am a current MS Candidate in GIScience at the Clark University, focusing on remote sensing of forest disturbances. I have a passion for remote sensing and GIScience for conservation purposes and have continued that through my undergraduate and graduate degree. I have experience working with remotely sensed products and large databases. My interests lie within land use/land cover change, forest disturbances, and coastal and tropical ecology. My current research as part of my MS in GIScience involves using the Harmonized Landsat Sentinel-2 product for Gypsy Moth defoliation tracking.

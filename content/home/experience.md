@@ -18,6 +18,18 @@ date_format = "January 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+  title = "Masters Thesis"
+  company = "Clark University"
+  company_url = ""
+  location = "Worcester, MA"
+  date_start = "2018-08-28"
+  date_end = "2019-08-01"
+  description = """
+  **Masters Thesis:** *Gypsy Moth from Above: Using Landsat Sentinel-2 Fusion Products to Track the Impact of Gypsy Moth in Southern New England*
+  """
+
 [[experience]]
   title = """Teaching Assistant -<br>Python Programming for GIS & Field Methods"""
   company = "Clark University"
@@ -26,7 +38,7 @@ date_format = "January 2006"
   date_start = "2018-08-27"
   date_end = "2019-05-06"
   description = """
-  Responsibilities:
+  **Responsibilities:**
   
   * Hold weekly labs and assign labwork
   * Hold weekly office hours for student questions
@@ -51,6 +63,17 @@ date_format = "January 2006"
   """
 
 [[experience]]
+  title = "Honors Thesis"
+  company = "Clark University"
+  company_url = ""
+  location = "Worcester, MA"
+  date_start = "2017-08-20"
+  date_end = "2018-05-20"
+  description = """
+  **Honors Thesis:** *Trends in Forest Cover: Semi-Automated Classification of Forest Cover in Massachusetts for 2015*
+  """
+
+[[experience]]
   title = "GIS Help Desk Assistant"
   company = "Clark University"
   company_url = ""
@@ -58,6 +81,8 @@ date_format = "January 2006"
   date_start = "2018-01-16"
   date_end = "2018-05-20"
   description = """
+  **Responsibilities:**
+  
   * Free, one-on-one tutoring and guidance to students for GIS
   * Point of contact for GIS troubleshooting for students in GIS classes
   * Provided guidence and support on GIS concepts and issues with software

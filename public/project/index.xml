@@ -7,10 +7,197 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Tyler Anderson</copyright>
-    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0400</lastBuildDate>
     
 	    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bison in Montana</title>
+      <link>/project/wcs-bison/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/project/wcs-bison/</guid>
+      <description>
+
+&lt;p&gt;As part of a class at Clark University, I was part of a consultancy with the Wildlife Conservation Society (WCS) on rangeland trends in Montana and the implications for Bison reintroduction, particularly for partners. Bison are a ecologically important species in the rangeland across the Western US, and remain a vital part of WCS&amp;rsquo;s mission. In particular WCS was interested in who they should partner with across Montana and within the Crown of the Continent ecoregion.&lt;/p&gt;
+
+&lt;h2 id=&#34;research-objectives&#34;&gt;Research Objectives&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Where and with whom should WCS build partnerships to successfully reintroduce bison to Montana?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Where is potential bison habitat in Montana?&lt;/li&gt;
+&lt;li&gt;What are the trends in bison habitat vegetation conditions between 2004-2018? Where are these trends occurring?&lt;/li&gt;
+&lt;li&gt;What are the relationships between management unit size and ownership?
+
+&lt;ul&gt;
+&lt;li&gt;Federal, state, tribal, private ownerships
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/wcs-bison/wcs_studyarea.png&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Fig 1: Study Area with Rangeland across Montana highlighted&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;habitat-modeling&#34;&gt;Habitat Modeling&lt;/h4&gt;
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-habitat&#34; href=&#34;/project/wcs-bison/habitat/habitat_factors.png&#34; &gt;
+  &lt;img src=&#34;/project/wcs-bison/habitat/habitat_factors_hu7778a6b46d296ab6032841f7cc980325_21424_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-habitat&#34; href=&#34;/project/wcs-bison/habitat/habitat_factors_vals.png&#34; &gt;
+  &lt;img src=&#34;/project/wcs-bison/habitat/habitat_factors_vals_hub5d5ce32481f071e1a3e6c87aecc3358_43204_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-habitat&#34; href=&#34;/project/wcs-bison/habitat/habitat_final_model.png&#34; &gt;
+  &lt;img src=&#34;/project/wcs-bison/habitat/habitat_final_model_hu81215c0062779a29e4324a4e67fb6f85_190705_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+&lt;h4 id=&#34;land-ownership&#34;&gt;Land Ownership&lt;/h4&gt;
+
+&lt;p&gt;As ownership&amp;rsquo;s effect on suitable rangeland for bison was such a concern, we used the Montana State Cadastral database to understand how land was allocated in ownership classes across the state. We broke ownership down broadly into 4 groups: private, state, federal, and tribal lands. As seen below in Figure 2, Over half of suitable lands for bison are under private ownership, with federal lands being the next biggest owner.
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/wcs-bison/montana_ownership.png&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Figure 2: Land Ownership across Bison suitable rangelands in Montana&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Chla.png&#34; &gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_SPM.png&#34; &gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Turb.png&#34; &gt;
+
+
+&lt;/figure&gt;
+
+Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/ResidenceTime.png&#34; &gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Haiti Cholera Health Sites</title>

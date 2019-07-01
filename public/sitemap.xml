@@ -18,6 +18,35 @@
   </url>
   
   <url>
+    <loc>/project/wcs-bison/</loc>
+    <lastmod>2019-06-01T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-06-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/raster/</loc>
+    <lastmod>2019-06-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/remote-sensing/</loc>
+    <lastmod>2019-06-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-06-30T17:17:49-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-06-30T17:17:49-04:00</lastmod>
     <priority>0</priority>
@@ -36,7 +65,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2019-06-30T17:17:49-04:00</lastmod>
+    <lastmod>2019-07-01T11:21:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,12 +77,6 @@
   
   <url>
     <loc>/tags/source-themes/</loc>
-    <lastmod>2019-06-30T17:17:49-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-06-30T17:17:49-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -92,24 +115,6 @@
   <url>
     <loc>/project/central-america-landchange/</loc>
     <lastmod>2018-11-29T03:16:28-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2018-11-29T03:16:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/raster/</loc>
-    <lastmod>2018-11-29T03:16:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/remote-sensing/</loc>
-    <lastmod>2018-11-29T03:16:28-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -189,7 +194,7 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2019-06-30T17:17:49-04:00</lastmod>
+    <lastmod>2019-07-01T11:21:26-04:00</lastmod>
   </url>
   
   <url>
