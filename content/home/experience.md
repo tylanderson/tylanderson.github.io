@@ -19,17 +19,19 @@ date_format = "January 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Teaching Assistant"
+  title = """Teaching Assistant -<br>Python Programming for GIS & Field Methods"""
   company = "Clark University"
   company_url = ""
   location = "Worcester, MA"
   date_start = "2018-08-27"
-  date_end = ""
+  date_end = "2019-05-06"
   description = """
-  Responsibilities include:
+  Responsibilities:
   
-  * Assisting classwork and labs
-  * Grading labs
+  * Hold weekly labs and assign labwork
+  * Hold weekly office hours for student questions
+  * Test labs before student receival
+  * Grade labs and keep track of grades
   """
 
 [[experience]]
@@ -39,7 +41,14 @@ date_format = "January 2006"
   location = "Moffett Field, CA"
   date_start = "2018-06-04"
   date_end = "2018-08-10"
-  description = """Research Project: Analyzing Hurricane Influences on Coastal Water Quality and their Impact to Marine Ecosystems"""
+  description = """
+  **Research Project:** *Analyzing Hurricane Influences on Coastal Water Quality and their Impact to Marine Ecosystems*
+  
+  * Investigated change in water qaulity in the US Virgin Islands after the 2017 hurricane season
+  * Analyzed spatial and temporal extent of changes using Landsat 8 and Sentinel-2
+  * Processed data using ACOLITE for water quality indices and R for data processing
+  * Presented research to project collaborators and NASA employees
+  """
 
 [[experience]]
   title = "GIS Help Desk Assistant"
@@ -48,7 +57,11 @@ date_format = "January 2006"
   location = "Worcester, MA"
   date_start = "2018-01-16"
   date_end = "2018-05-20"
-  description = """"""
+  description = """
+  * Free, one-on-one tutoring and guidance to students for GIS
+  * Point of contact for GIS troubleshooting for students in GIS classes
+  * Provided guidence and support on GIS concepts and issues with software
+  """
 
 [[experience]]
   title = "NOAA Fellowship"
@@ -57,7 +70,14 @@ date_format = "January 2006"
   location = "Silver Spring, MD"
   date_start = "2017-06-04"
   date_end = "2017-08-19"
-  description = """Research Project: Rapid Bathymetry for Safer Navigation"""
+  description = """
+  **Research Project:** *Rapid Bathymetry for Safer Navigation*
+  
+  * Investigated the relationship between satellite-derived bathymetry and turbidity
+  * Used 300 m MODIS satellite-derived bathymetry (SBD) and Kd_Rhos (proxy for turbidity) to understand the relationship between SBD and turbidity
+  * LiDAR based bathymetry used to validate SBD and understand Kd_Rhos (turbidity) effect
+  * Presented updates/results at weekly team meetings and final internship presentation
+  """
   
 [[experience]]
   title = "HERO Fellowship"
@@ -66,6 +86,10 @@ date_format = "January 2006"
   location = "Worcester, MA"
   date_start = "2016-05-04"
   date_end = "2017-07-19"
-  description = """"""
+  description = """
+  * Investigated health of juvenile trees planted after tree removal program due to invasive Asian Longhorn Beetle (ALB) in Worcester, MA
+  * Field work collecting data on juvenile tree status, vigor, and health across the City of Worcester
+  * Data analysis to invesitagte survivorship based on factors such as: species, use, location of property, ownership, and more
+  """
 
 +++

@@ -24,13 +24,15 @@ interests:
 - Remote Sensing
 - Forest Cover and Land Use Change
 - Coastal Ecology
+- Python
+- Time Series Analysis
 
 education:
   courses:
-  - course: MS Candidate in GIScience
+  - course: M.S. in GIScience
     institution: Clark University
     year: 2019
-  - course: BA in Environmental Science
+  - course: B.A. in Environmental Science
     institution: Clark University
     year: 2018
 
