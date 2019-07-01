@@ -51,8 +51,4 @@ As ownership's effect on suitable rangeland for bison was such a concern, we use
 
 ## Results
 
-{{< figure library="1" src="projects/nasa-usvi-hurricane/USVI_Chla.png" >}}
-{{< figure library="1" src="projects/nasa-usvi-hurricane/USVI_SPM.png" >}}
-{{< figure library="1" src="projects/nasa-usvi-hurricane/USVI_Turb.png" >}}
-Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
-{{< figure library="1" src="projects/nasa-usvi-hurricane/ResidenceTime.png" >}}
+*COMING SOON*
