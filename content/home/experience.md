@@ -112,6 +112,8 @@ date_format = "January 2006"
   date_start = "2016-05-04"
   date_end = "2017-07-19"
   description = """
+  **Research Project:**
+  
   * Investigated health of juvenile trees planted after tree removal program due to invasive Asian Longhorn Beetle (ALB) in Worcester, MA
   * Field work collecting data on juvenile tree status, vigor, and health across the City of Worcester
   * Data analysis to invesitagte survivorship based on factors such as: species, use, location of property, ownership, and more

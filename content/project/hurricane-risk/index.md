@@ -31,8 +31,8 @@ This project, produced out of an Advanced Vector class, examined how to quantify
 
 {{< figure library="1" src="projects/hurricane-risk/HRI_Methods.jpg" >}}
 Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm: 
-$$ HRI=\frac{(W\_{a}\*SoVI)+(W\_{b}\*HurrStrike)+(W\_{c}\*AvgSpeed)}{W\_{a}+W\_{b}+W\_{c}} $$
-Weights were set so that the hurricane data was not over represented: $W\_{a}=0.5$, $W\_{b}=0.25$, $W\_{c}=0.25$.
+$$ HRI=\frac{(W{a}\*SoVI)+(W{b}\*HurrStrike)+(W{c}\*AvgSpeed)}{W{a}+W{b}+W{c}} $$
+Weights were set so that the hurricane data was not over represented: $W{a}=0.5$, $W{b}=0.25$, $W{c}=0.25$.
 {{< figure library="1" src="projects/hurricane-risk/HRI_Inputs.jpg" >}}
 Individual HRI variables, and Hot Spot analysis for each. Hurricane based variables have a large hot spot in South Florida, while SoVI shows a hot spot of vulnerability just north of Florida.
 

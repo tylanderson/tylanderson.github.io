@@ -20,7 +20,13 @@
       <guid>/project/wcs-bison/</guid>
       <description>
 
-&lt;p&gt;As part of a class at Clark University, I was part of a consultancy with the Wildlife Conservation Society (WCS) on rangeland trends in Montana and the implications for Bison reintroduction, particularly for partners. Bison are a ecologically important species in the rangeland across the Western US, and remain a vital part of WCS&amp;rsquo;s mission. In particular WCS was interested in who they should partner with across Montana and within the Crown of the Continent ecoregion.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Work In Progress&amp;hellip; Page Unfinished
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As part of a class at Clark University, I was part of a consultancy with the &lt;a href=&#34;https://www.wcs.org/our-work/species/bison&#34; target=&#34;_blank&#34;&gt;Wildlife Conservation Society (WCS)&lt;/a&gt; on rangeland trends in Montana and the implications for Bison reintroduction, particularly for partners. Bison are a ecologically important species in the rangeland across the Western US, and remain a vital part of WCS&amp;rsquo;s mission. In particular WCS was interested in who they should partner with across Montana and within the Crown of the Continent ecoregion.&lt;/p&gt;
 
 &lt;h2 id=&#34;research-objectives&#34;&gt;Research Objectives&lt;/h2&gt;
 
@@ -135,67 +141,11 @@
 
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;
-
-
-  
-
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Chla.png&#34; &gt;
-
-
-&lt;/figure&gt;
-
-
-
-
-  
-
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_SPM.png&#34; &gt;
-
-
-&lt;/figure&gt;
-
-
-
-
-  
-
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/USVI_Turb.png&#34; &gt;
-
-
-&lt;/figure&gt;
-
-Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
-
-
-
-  
-
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;/img/projects/nasa-usvi-hurricane/ResidenceTime.png&#34; &gt;
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    More Coming Soon
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -379,8 +329,8 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
 &lt;/figure&gt;
 
 Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm:
-$$ HRI=\frac{(W_{a}*SoVI)+(W_{b}*HurrStrike)+(W_{c}*AvgSpeed)}{W_{a}+W_{b}+W_{c}} $$
-Weights were set so that the hurricane data was not over represented: $W_{a}=0.5$, $W_{b}=0.25$, $W_{c}=0.25$.
+$$ HRI=\frac{(W{a}*SoVI)+(W{b}*HurrStrike)+(W{c}*AvgSpeed)}{W{a}+W{b}+W{c}} $$
+Weights were set so that the hurricane data was not over represented: $W{a}=0.5$, $W{b}=0.25$, $W{c}=0.25$.
 
 
 

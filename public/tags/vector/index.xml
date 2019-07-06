@@ -192,8 +192,8 @@
 &lt;/figure&gt;
 
 Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm:
-$$ HRI=\frac{(W_{a}*SoVI)+(W_{b}*HurrStrike)+(W_{c}*AvgSpeed)}{W_{a}+W_{b}+W_{c}} $$
-Weights were set so that the hurricane data was not over represented: $W_{a}=0.5$, $W_{b}=0.25$, $W_{c}=0.25$.
+$$ HRI=\frac{(W{a}*SoVI)+(W{b}*HurrStrike)+(W{c}*AvgSpeed)}{W{a}+W{b}+W{c}} $$
+Weights were set so that the hurricane data was not over represented: $W{a}=0.5$, $W{b}=0.25$, $W{c}=0.25$.
 
 
 

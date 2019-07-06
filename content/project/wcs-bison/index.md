@@ -27,7 +27,11 @@ share = false
 
 +++
 
-As part of a class at Clark University, I was part of a consultancy with the Wildlife Conservation Society (WCS) on rangeland trends in Montana and the implications for Bison reintroduction, particularly for partners. Bison are a ecologically important species in the rangeland across the Western US, and remain a vital part of WCS's mission. In particular WCS was interested in who they should partner with across Montana and within the Crown of the Continent ecoregion.
+{{% alert warning %}}
+Work In Progress... Page Unfinished
+{{% /alert %}}
+
+As part of a class at Clark University, I was part of a consultancy with the [Wildlife Conservation Society (WCS)](https://www.wcs.org/our-work/species/bison) on rangeland trends in Montana and the implications for Bison reintroduction, particularly for partners. Bison are a ecologically important species in the rangeland across the Western US, and remain a vital part of WCS's mission. In particular WCS was interested in who they should partner with across Montana and within the Crown of the Continent ecoregion.
 
 ## Research Objectives
 
@@ -51,4 +55,6 @@ As ownership's effect on suitable rangeland for bison was such a concern, we use
 
 ## Results
 
-*COMING SOON*
+{{% alert note %}}
+More Coming Soon
+{{% /alert %}}
