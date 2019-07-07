@@ -14,23 +14,23 @@ tags = ["Vector"]
 share = false
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your project's folder. 
+# To use, add an image named `featured.jpg/png` to your project's folder.
 [image]
   # Caption (optional)
   caption = "Hurricane Risk Index (HRI)"
-  
+
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Center"
-  
+
   preview_only = true
 
 +++
 
-This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts. This is based off historical data, and may change in the future.
+This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnerability. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts. This is based off historical data, and may change in the future.
 
 {{< figure library="1" src="projects/hurricane-risk/HRI_Methods.jpg" >}}
-Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm: 
+Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algorithm:
 $$ HRI=\frac{(W{a}\*SoVI)+(W{b}\*HurrStrike)+(W{c}\*AvgSpeed)}{W{a}+W{b}+W{c}} $$
 Weights were set so that the hurricane data was not over represented: $W{a}=0.5$, $W{b}=0.25$, $W{c}=0.25$.
 {{< figure library="1" src="projects/hurricane-risk/HRI_Inputs.jpg" >}}

@@ -39,7 +39,7 @@ date_format = "January 2006"
   date_end = "2019-05-06"
   description = """
   **Responsibilities:**
-  
+
   * Hold weekly labs and assign labwork
   * Hold weekly office hours for student questions
   * Test labs before student receival
@@ -55,8 +55,8 @@ date_format = "January 2006"
   date_end = "2018-08-10"
   description = """
   **Research Project:** *Analyzing Hurricane Influences on Coastal Water Quality and their Impact to Marine Ecosystems*
-  
-  * Investigated change in water qaulity in the US Virgin Islands after the 2017 hurricane season
+
+  * Investigated change in water quality in the US Virgin Islands after the 2017 hurricane season
   * Analyzed spatial and temporal extent of changes using Landsat 8 and Sentinel-2
   * Processed data using ACOLITE for water quality indices and R for data processing
   * Presented research to project collaborators and NASA employees
@@ -82,10 +82,10 @@ date_format = "January 2006"
   date_end = "2018-05-20"
   description = """
   **Responsibilities:**
-  
+
   * Free, one-on-one tutoring and guidance to students for GIS
   * Point of contact for GIS troubleshooting for students in GIS classes
-  * Provided guidence and support on GIS concepts and issues with software
+  * Provided guidance and support on GIS concepts and issues with software
   """
 
 [[experience]]
@@ -97,13 +97,13 @@ date_format = "January 2006"
   date_end = "2017-08-19"
   description = """
   **Research Project:** *Rapid Bathymetry for Safer Navigation*
-  
+
   * Investigated the relationship between satellite-derived bathymetry and turbidity
   * Used 300 m MODIS satellite-derived bathymetry (SBD) and Kd_Rhos (proxy for turbidity) to understand the relationship between SBD and turbidity
   * LiDAR based bathymetry used to validate SBD and understand Kd_Rhos (turbidity) effect
   * Presented updates/results at weekly team meetings and final internship presentation
   """
-  
+
 [[experience]]
   title = "HERO Fellowship"
   company = "Clark University"
@@ -113,10 +113,10 @@ date_format = "January 2006"
   date_end = "2017-07-19"
   description = """
   **Research Project:**
-  
+
   * Investigated health of juvenile trees planted after tree removal program due to invasive Asian Longhorn Beetle (ALB) in Worcester, MA
   * Field work collecting data on juvenile tree status, vigor, and health across the City of Worcester
-  * Data analysis to invesitagte survivorship based on factors such as: species, use, location of property, ownership, and more
+  * Data analysis to investigate survivorship based on factors such as: species, use, location of property, ownership, and more
   """
 
 +++
