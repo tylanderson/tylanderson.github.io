@@ -157,7 +157,7 @@
       <guid>/project/ma-forestcover/</guid>
       <description>
 
-&lt;p&gt;For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosyntheic vegatation, and non-photosynthetic vegatation) and forest cover maps. CLASlite is a semi-automated approach, user input is only data and thresholds for classification and masking, and most importantly, it&amp;rsquo;s FREE!
+&lt;p&gt;For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per Landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosynthetic vegetation, and non-photosynthetic vegetation) and forest cover maps. CLASlite is a semi-automated approach, user input is only data and thresholds for classification and masking, and most importantly, it&amp;rsquo;s FREE!
 
 
 
@@ -239,7 +239,7 @@ CLASlite has a change detection step included, however we chose to use our own m
 
 &lt;/figure&gt;
 
-Training Points were generated at 968 locations, stratified by EcoRegion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by EcoRegion, with overall accuracy at 87%.
+Training Points were generated at 968 locations, stratified by Ecoregion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by Ecoregion, with overall accuracy at 87%.
 
 
 
@@ -255,7 +255,7 @@ Training Points were generated at 968 locations, stratified by EcoRegion. A base
 
 &lt;/figure&gt;
 
-Forest and Non-Forest cover persistance, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
+Forest and Non-Forest cover persistence, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
 
 &lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
 
@@ -300,7 +300,7 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
       <guid>/project/central-america-landchange/</guid>
       <description>
 
-&lt;p&gt;This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used &lt;a href=&#34;http://maps.elie.ucl.ac.be/CCI/viewer/&#34; target=&#34;_blank&#34;&gt;ESA CCI Land Cover Data&lt;/a&gt;, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.
+&lt;p&gt;This project created maps of the lands potential to transition from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used &lt;a href=&#34;http://maps.elie.ucl.ac.be/CCI/viewer/&#34; target=&#34;_blank&#34;&gt;ESA CCI Land Cover Data&lt;/a&gt;, reclassified into 7 categories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.
 
 
 
@@ -332,7 +332,7 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
 &lt;/figure&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Using change analysis, we can see how catagories are lossing area and gaining area. Forests had the highest net loss out of all catagories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
+&lt;p&gt;Using change analysis, we can see how categories are losing area and gaining area. Forests had the highest net loss out of all categories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
 
 
 
@@ -425,7 +425,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
       <guid>/project/nasa-usvi-hurricane/</guid>
       <description>
 
-&lt;p&gt;The US Virgin Islands, located just East of Puerto Rico in the Carribean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collabarated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowning the impact of major hurricanes such as Irma and Maria is vital.&lt;/p&gt;
+&lt;p&gt;The US Virgin Islands, located just East of Puerto Rico in the Caribbean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collaborated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowing the impact of major hurricanes such as Irma and Maria is vital.&lt;/p&gt;
 
 
 
@@ -443,7 +443,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 &lt;/figure&gt;
 
 
-&lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch proccess the data for all 200+ images analyzed in this study.&lt;/p&gt;
+&lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch process the data for all 200+ images analyzed in this study.&lt;/p&gt;
 
 
 
@@ -461,7 +461,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 &lt;/figure&gt;
 
 
-&lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normals. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
+&lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normal. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
 
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 
@@ -510,7 +510,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 
 &lt;/figure&gt;
 
-Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
+Residence Time shows the percentage of pixels with data that were flagged as above 2016 normal over time. You can see that over time water quality parameters return to normal, over about 3 months.
 
 
 

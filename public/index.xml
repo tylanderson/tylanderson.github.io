@@ -7,7 +7,7 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Tyler Anderson</copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -81,6 +81,215 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uploading Custom Raster Image Collections to Google Earth Engine</title>
+      <link>/post/uploading-custom-raster-image-collections-to-google-earth-engine/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/uploading-custom-raster-image-collections-to-google-earth-engine/</guid>
+      <description>
+
+&lt;p&gt;If you are like me, the image collections on Google Earth Engine are not always suitable for the project that you are working on. Luckily there are other people out there like you who have also been interested in the idea of uploading raster image collections that are not in the Google Earth Engine catalog to Earth Engine Image Collection assets. This post aims to show how I did this and why you might want to do this. Things move fast so this post might not be up to date when you use it!&lt;/p&gt;
+
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;Google Earth Engine is a great utility. It allows for processing of large image collections, which can make for some really cool analysis all from the browser. One of the big draws of Earth Engine is the repository of many different satellite products already ingested by Google. However there are some exceptions. For me, I was working on a project and wanted to create cloud free composites, and products derived from them, from Landsat ARD data and Harmonized Landsat Sentinel-2 data, both of which aren&amp;rsquo;t on the current GEE repository. So what do you do? Well currently, you can upload raster images one at a time to assets in GEE, however this would take a while and doesn&amp;rsquo;t add them to a image collection.&lt;/p&gt;
+
+&lt;h2 id=&#34;enter-geeup&#34;&gt;Enter &lt;em&gt;geeup&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/samapriya/geeup&#34; target=&#34;_blank&#34;&gt;geeup&lt;/a&gt; is a python package that I stumbled upon when searching for solutions. This allows you to upload rasters to an image collection from a CLI. Additionally, you can upload metadata along with the files, something we will also utilize&lt;/p&gt;
+
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make sure you have python installed. I recommend using &lt;a href=&#34;https://www.anaconda.com/distribution/&#34; target=&#34;_blank&#34;&gt;anaconda&lt;/a&gt; to manage everything in a virtual environment.&lt;/li&gt;
+&lt;li&gt;Make sure you have installed and setup the &lt;a href=&#34;https://developers.google.com/earth-engine/python_install_manual&#34; target=&#34;_blank&#34;&gt;Google Earth Engine python API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make sure geeup is installed and callable from the cli&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;using-geeup&#34;&gt;Using geeup&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;Once everything is installed and working, geeup is pretty easy to use. You can call it from the cli&lt;/p&gt;
+
+&lt;p&gt;First let&amp;rsquo;s see all the arguments we need for uploading to image collections&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;geeup upload --help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which returns the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;usage: geeup upload [-h] --source SOURCE --dest DEST -m METADATA
+                    [--nodata NODATA] [-u USER]
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Required named arguments.:
+  --source SOURCE       Path to the directory with images for upload.
+  --dest DEST           Destination. Full path for upload to Google Earth
+                        Engine, e.g. users/pinkiepie/myponycollection
+  -m METADATA, --metadata METADATA
+                        Path to CSV with metadata.
+  -u USER, --user USER  Google account name (gmail address).
+
+Optional named arguments:
+  --nodata NODATA       The value to burn into the raster as NoData (missing
+                        data)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This lets us know that we must give a path to which the images area stored, a destination name, a csv file, and an user account
+We want to upload slected metadata that is embeded into the file, as well as some extra metadata like filename and datetime&lt;/p&gt;
+
+&lt;p&gt;geeup upload requires that the first column starts with in_no, a column of filenames without their extensions
+Additionally, if you want to take advantage of filtering by date, you need to upload a variable called system:time_start which contains a integer of milliseconds since UNIX epoch.&lt;/p&gt;
+
+&lt;h3 id=&#34;extract-metadata-to-csv&#34;&gt;Extract Metadata to CSV&lt;/h3&gt;
+
+&lt;p&gt;I have written some code that iterates through a folder of GeoTIFF images and returns a csv file with the format required to upload to earth engine using geeup upload. This may need some tweaks to get it to work with your data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from osgeo import gdal
+import pandas as pd
+import os
+
+in_dir = r&amp;quot;E:\Moth\HLS_DATA\HLS_GTiff&amp;quot;
+out_csv = r&amp;quot;E:\Moth\HLS_DATA\HLS_metadata.csv&amp;quot;
+
+# List of metadata keys to extract
+meta_keys = [&#39;cloud_coverage&#39;,
+             &#39;SENSOR&#39;,
+             &#39;spatial_coverage&#39;]
+
+# Add other required keys and make pandas data frame
+# We will store the metadata in the df
+csv_keys = [&#39;id_no&#39;, &#39;system:time_start&#39;]
+csv_keys.extend(meta_keys)
+df = pd.DataFrame(columns=csv_keys)
+
+for root, dirs, files in os.walk(in_dir):
+    for file in files:
+        if file.endswith(&amp;quot;.tif&amp;quot;):
+            path = os.path.join(root, file) # make path
+            raster = gdal.Open(path, gdal.GA_ReadOnly) # Open Raster in GDAL
+            meta = dict.fromkeys(csv_keys) # Make a dict to store key, values
+
+            # Get time from filename
+            # Example filename (LC80300062013106C2V01_MTLstack.tif)
+            year = file[9:13]
+            doy = file[13:16]
+            hour = &#39;12&#39;
+            timestamp = year + doy + hour
+            # convert time stamp to gee format
+            gee_timestamp = int(pd.to_datetime(timestamp,
+                                               format=&#39;%Y%j%H&#39;).value // 10**6)
+
+            meta[&#39;id_no&#39;] = os.path.splitext(file)[0]
+            meta[&#39;system:time_start&#39;] = gee_timestamp
+            for key in meta_keys:
+                meta[key] = raster.GetMetadataItem(key)
+
+            df = df.append(meta, ignore_index=True)
+print(df)
+df.to_csv(out_csv, index=False)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example Output CSV:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;id_no&lt;/th&gt;
+&lt;th&gt;system:time_start&lt;/th&gt;
+&lt;th&gt;cloud_coverage&lt;/th&gt;
+&lt;th&gt;SENSOR&lt;/th&gt;
+&lt;th&gt;spatial_coverage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013106HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1366126135668&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013122HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1367508534542&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;86&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013170HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1371655742618&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;86&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013177HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1372260914415&lt;/td&gt;
+&lt;td&gt;73&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;71&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013186HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1373038145976&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013209HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1375025717043&lt;/td&gt;
+&lt;td&gt;71&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013218HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1375802947474&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013250HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1378567748156&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;LC8T19TBG2013257HLS14_MTLstack&lt;/td&gt;
+&lt;td&gt;1379172916462&lt;/td&gt;
+&lt;td&gt;80&lt;/td&gt;
+&lt;td&gt;OLI_TIRS&lt;/td&gt;
+&lt;td&gt;71&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;putting-it-all-together&#34;&gt;Putting it all together&lt;/h3&gt;
+
+&lt;p&gt;Finally, we can upload all of this to Google Earth Engine with that same call from before geeup uploading&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;geeup upload --source somepath/somefolder --dest users/username/imagecollection -u user@gmail.com -m somepath/metadata.csv
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -234,69 +443,6 @@
 &lt;/div&gt;
 
 &lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/jupyter/</guid>
-      <description>
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
-
-&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
-hugo new  --kind post post/my-post
-cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
-
-# Copy the contents of Untitled.md and append it to index.md:
-cat Untitled.md | tee -a index.md
-
-# Remove the temporary file:
-rm Untitled.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -492,9 +638,9 @@ $$&lt;/p&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;In 2010, a major earthquake struck Haiti, causing widespread damage. Following the earthquake, a massive cholera outbreak occured. The first case was in October 2010, and by March 2011 ~4,500 people had already died as a result of cholera. Since 2010, ~9,750 people have died from cholera, and it has infected more than 800,000 people.&lt;/p&gt;
+&lt;p&gt;In 2010, a major earthquake struck Haiti, causing widespread damage. Following the earthquake, a massive cholera outbreak occurred. The first case was in October 2010, and by March 2011 ~4,500 people had already died as a result of cholera. Since 2010, ~9,750 people have died from cholera, and it has infected more than 800,000 people.&lt;/p&gt;
 
-&lt;p&gt;The 2010 Haitian Cholera outbreak was the first modern outbreak of cholera. The first cases occured in Artibonite, Haiti&amp;rsquo;s largest department with an estimated population of 1.7 million people. The outbreak began in the Artibonite river, due to untreated sewage contaminating the river from a UN Peacekeeping Camp, which was set up to provide relief from the 2010 earthquake. As the river is a drinking source for many people, and due to Haiti&amp;rsquo;s poor drinking water and sanitation infrastructure, Cholera spread rapidly. Today Artibonite continues to be the department with the most Cholera cases in Haiti.
+&lt;p&gt;The 2010 Haitian Cholera outbreak was the first modern outbreak of cholera. The first cases occurred in Artibonite, Haiti&amp;rsquo;s largest department with an estimated population of 1.7 million people. The outbreak began in the Artibonite river, due to untreated sewage contaminating the river from a UN Peacekeeping Camp, which was set up to provide relief from the 2010 earthquake. As the river is a drinking source for many people, and due to Haiti&amp;rsquo;s poor drinking water and sanitation infrastructure, Cholera spread rapidly. Today Artibonite continues to be the department with the most Cholera cases in Haiti.
 
 
 
@@ -513,7 +659,7 @@ $$&lt;/p&gt;
 
 &lt;h2 id=&#34;data-methods&#34;&gt;Data &amp;amp; Methods&lt;/h2&gt;
 
-&lt;p&gt;Data for this project was retrived from publicly accessible and open-source sites. Most data came from the Humanitarian Data Excange (HDX), and Open Street Maps (OSM).&lt;/p&gt;
+&lt;p&gt;Data for this project was retrieved from publicly accessible and open-source sites. Most data came from the Humanitarian Data Exchange (HDX), and Open Street Maps (OSM).&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -544,7 +690,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;Administrative Boundries&lt;/td&gt;
+&lt;td&gt;Administrative Boundaries&lt;/td&gt;
 &lt;td&gt;OCHA Haiti&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://data.humdata.org/dataset/hti-polbndl-adm1-cnigs-zip&#34; target=&#34;_blank&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -569,11 +715,10 @@ $$&lt;/p&gt;
 &lt;li&gt;Merged OSM and CNIGS road datasets&lt;/li&gt;
 &lt;li&gt;Extend Lines Tool&lt;/li&gt;
 &lt;li&gt;Trim Lines Tool&lt;/li&gt;
-&lt;li&gt;Planarize Lines
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Planarize Lines&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Network Dataset:&lt;/strong&gt; After fixes, the road network for analysis was built using simple distance based cost, and service areas were generated for three intervals; 0km - 2km, 2km - 5km, and 5km - 8km. Cholera health sites within 5km was our target, being ~1 hour walking time, with 8km being on the outer fringes of health site accessibility. We chose to use distances as few people in Haiti own their own car, and rural areas have to walk to health sites. Additionally, previous research had looked at health sites within 5km euclidean distance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Network Dataset:&lt;/strong&gt; After fixes, the road network for analysis was built using simple distance based cost, and service areas were generated for three intervals; 0km - 2km, 2km - 5km, and 5km - 8km. Cholera health sites within 5km was our target, being ~1 hour walking time, with 8km being on the outer fringes of health site accessibility. We chose to use distances as few people in Haiti own their own car, and rural areas have to walk to health sites. Additionally, previous research had looked at health sites within 5km Euclidean distance.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;New Health Site Suitability:&lt;/strong&gt; Using suitability variables new health site suitability was calculated for areas outside of current service areas. The weighted overlay tool in ArcGIS was suitable for this. The weights were set as follows:&lt;/p&gt;
 
@@ -644,7 +789,7 @@ $$&lt;/p&gt;
       <guid>/project/hurricane-risk/</guid>
       <description>
 
-&lt;p&gt;This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnearbility. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts. This is based off historical data, and may change in the future.&lt;/p&gt;
+&lt;p&gt;This project, produced out of an Advanced Vector class, examined how to quantify Hurricane Risk by county for Florida (as well as surrounding counties). Using Historical Hurricane data from NOAA, and Social Vulnerability data from the CDC, we mapped Exposure to hurricanes, Average Intensity of Hurricanes, and Vulnerability. These were aggregated into a final, Hurricane Risk Index, or HRI. This can be used to assess the risk of each county to hurricane impacts. This is based off historical data, and may change in the future.&lt;/p&gt;
 
 &lt;p&gt;
 
@@ -661,7 +806,7 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algrithm:
+Hurricane Risk Index is created using a multi-criteria evaluation with three parameters, a Social Vulnerability Index, a Hurricane Strike Index, and a Hurricane Wind Speed Index. These factors are based off the theory of disaster risk based off exposure, vulnerability, and intensity. All three varaibles were standardized from 0 - 1, and then combined using the HRI algorithm:
 $$ HRI=\frac{(W{a}*SoVI)+(W{b}*HurrStrike)+(W{c}*AvgSpeed)}{W{a}+W{b}+W{c}} $$
 Weights were set so that the hurricane data was not over represented: $W{a}=0.5$, $W{b}=0.25$, $W{c}=0.25$.
 
@@ -726,7 +871,7 @@ Running Hot Spot analysis on the HRI reveals that South Florida has the highest 
       <guid>/project/ma-forestcover/</guid>
       <description>
 
-&lt;p&gt;For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosyntheic vegatation, and non-photosynthetic vegatation) and forest cover maps. CLASlite is a semi-automated approach, user input is only data and thresholds for classification and masking, and most importantly, it&amp;rsquo;s FREE!
+&lt;p&gt;For my senior honors thesis, I worked to update a Landsat forest cover map for Massachusetts to 2015. At Clark University forest cover maps for the state have been produced back to the 1970&amp;rsquo;s in ~10 year intervals based on data availability. Landsat 8 data for summer months of 2015 were used, with 15 images (3 per Landsat scene) in total. CLASlite was used, a software produced by the Carnegie Institution for Science, which classifies raw imagery into fractional cover (soil, photosynthetic vegetation, and non-photosynthetic vegetation) and forest cover maps. CLASlite is a semi-automated approach, user input is only data and thresholds for classification and masking, and most importantly, it&amp;rsquo;s FREE!
 
 
 
@@ -808,7 +953,7 @@ CLASlite has a change detection step included, however we chose to use our own m
 
 &lt;/figure&gt;
 
-Training Points were generated at 968 locations, stratified by EcoRegion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by EcoRegion, with overall accuracy at 87%.
+Training Points were generated at 968 locations, stratified by Ecoregion. A basemap from MassGIS with WorldView imagery also from 2015 was used to validate that forest cover was accurately classified. Rate of accuracy varied by Ecoregion, with overall accuracy at 87%.
 
 
 
@@ -824,7 +969,7 @@ Training Points were generated at 968 locations, stratified by EcoRegion. A base
 
 &lt;/figure&gt;
 
-Forest and Non-Forest cover persistance, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
+Forest and Non-Forest cover persistence, gain, and loss shown. This shows where forest cover has grown and where it has lost area.&lt;/p&gt;
 
 &lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
 
@@ -869,7 +1014,7 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
       <guid>/project/central-america-landchange/</guid>
       <description>
 
-&lt;p&gt;This project created maps of the lands potential to transtion from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used &lt;a href=&#34;http://maps.elie.ucl.ac.be/CCI/viewer/&#34; target=&#34;_blank&#34;&gt;ESA CCI Land Cover Data&lt;/a&gt;, reclassified into 7 catagories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.
+&lt;p&gt;This project created maps of the lands potential to transition from Forest, Grassland, and Shrubland to Agriculture or Settlement. We used &lt;a href=&#34;http://maps.elie.ucl.ac.be/CCI/viewer/&#34; target=&#34;_blank&#34;&gt;ESA CCI Land Cover Data&lt;/a&gt;, reclassified into 7 categories, and TerrSett&amp;rsquo;s Land Change Modeler tool. This project used 9 explanatory variables, listed in the workflow below, and change analysis to determine the transition potential of each land cover type using the TerrSett MLP model.
 
 
 
@@ -901,7 +1046,7 @@ Forest and Non-Forest cover persistance, gain, and loss shown. This shows where 
 &lt;/figure&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Using change analysis, we can see how catagories are lossing area and gaining area. Forests had the highest net loss out of all catagories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
+&lt;p&gt;Using change analysis, we can see how categories are losing area and gaining area. Forests had the highest net loss out of all categories, while settlement had the highest net gain. Shrubland had both very high loss and very high gain of area. Grassland had very little transition between 2008 and 2015. The gain loss data is additionally run through a markov chain to determine change allocation.
 
 
 
@@ -994,7 +1139,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
       <guid>/project/nasa-usvi-hurricane/</guid>
       <description>
 
-&lt;p&gt;The US Virgin Islands, located just East of Puerto Rico in the Carribean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collabarated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowning the impact of major hurricanes such as Irma and Maria is vital.&lt;/p&gt;
+&lt;p&gt;The US Virgin Islands, located just East of Puerto Rico in the Caribbean, consists of three main islands, St. Croix, St. John, and St. Thomas. In 2017, two major hurricanes, Irma and Maria, struck the islands, causing widespread damage. As part of the NASA DEVELOP project, we collaborated with the USVI Coastal Zone Management (CZM) to analyze the image of the hurricanes on water quality around reefs. Tourism is a huge sector in the USVI economy, and reefs are a vital part of that, so knowing the impact of major hurricanes such as Irma and Maria is vital.&lt;/p&gt;
 
 
 
@@ -1012,7 +1157,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 &lt;/figure&gt;
 
 
-&lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch proccess the data for all 200+ images analyzed in this study.&lt;/p&gt;
+&lt;p&gt;Using NASA&amp;rsquo;s Earth Observing Platforms along with ESA&amp;rsquo;s Sentinel-2, we looked at data from Landsat 5, Landsat 8, and Sentinel-2. Landsat 5 was used to look at historical hurricane impacts, while Landsat 8 and Sentinel-2 were used to establish baseline water quality during a non-hurricane year (2016) and post-hurricane water quality. ACOLITE, a standalone program for processing satellite data into ocean color products, was used to batch process the data for all 200+ images analyzed in this study.&lt;/p&gt;
 
 
 
@@ -1030,7 +1175,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 &lt;/figure&gt;
 
 
-&lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normals. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
+&lt;p&gt;We analyzed 3 water quality variables, Chlorophyll-a, Suspended Particulate Matter (SPM), and Turbidity. For 2016, we calculated the median value for each pixel, as well the upper quartile. Each 2017 image was per pixel compared to pixel median and upper quartile, in order to create images of areas above 2016 normal. These were used to calculate the percentage of days with data that were calculated as above 2016 normal.&lt;/p&gt;
 
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 
@@ -1079,7 +1224,7 @@ The main area with high transition potential is the Yucatan Penisula, which is c
 
 &lt;/figure&gt;
 
-Residence Time shows the percentage of pixels with data that were flagged as above 2016 normals over time. You can see that over time water quality parameters return to normal, over about 3 months.
+Residence Time shows the percentage of pixels with data that were flagged as above 2016 normal over time. You can see that over time water quality parameters return to normal, over about 3 months.
 
 
 
@@ -1279,223 +1424,6 @@ Residence Time shows the percentage of pixels with data that were flagged as abo
 &lt;/ul&gt;
 
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Setup Academic&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support development of Academic:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
-
-&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-strawberry.png&#34; data-caption=&#34;Strawberry&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-strawberry_hu36b0b347fcca08bd39e2df22dcedbdfb_39532_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     
