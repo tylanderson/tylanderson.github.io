@@ -20,6 +20,15 @@ date_format = "January 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Remote Sensing Scientist"
+  company = "Cloud to Street"
+  company_url = "https://www.cloudtostreet.info/"
+  location = "Brooklyn, NY"
+  date_start = "2019-08-26"
+  date_end = ""
+  description = """"""
+
+[[experience]]
   title = "Masters Thesis"
   company = "Clark University"
   company_url = ""

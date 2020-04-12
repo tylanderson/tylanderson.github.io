@@ -10,22 +10,21 @@ authors:
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: Remote Sensing Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Clark University
-  url: "https://www.clarku.edu/departments/geography/"
+- name: Cloud to Street
+  url: "https://cloudtostreet.info"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Graduate Student at Clark University interested in Remote Sensing
+bio: Remote Sensing @ C2S working on global flooding
 
 interests:
 - Remote Sensing
+- Python
 - Forest Cover and Land Use Change
 - Coastal Ecology
-- Python
-- Time Series Analysis
 
 education:
   courses:
@@ -43,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:TylAnderson@clarku.edu'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:TylAnderson@outlook.com'  # For a direct email link, use "mailto:test@example.org".
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/tylanderson/
@@ -69,4 +68,6 @@ user_groups:
 - Visitors
 ---
 
-I am a current MS Candidate in GIScience at the Clark University, focusing on remote sensing of forest disturbances. I have a passion for remote sensing and GIScience for conservation purposes and have continued that through my undergraduate and graduate degree. I have experience working with remotely sensed products and large databases. My interests lie within land use/land cover change, forest disturbances, and coastal and tropical ecology. My current research as part of my MS in GIScience involves using the Harmonized Landsat Sentinel-2 product for Gypsy Moth defoliation tracking.
+I am a Remote Sensing Scientist at Cloud to Street. Currently working on deploying remotely sensed flood maps and analytics to enable people around the world to respond to floods.
+
+Previously at Clark University focused on land use/land cover change, forest disturbances, and coastal ecology. My thesis there focused on using the Harmonized Landsat Sentinel-2 product for Gypsy Moth defoliation tracking.
