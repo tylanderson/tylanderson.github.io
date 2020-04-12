@@ -13,9 +13,6 @@ day_night = true
 font = "minimal"
 font_size = "L"
 
-# Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Tyler Anderson Remote Sensing Portfolio"
-
 ############################
 ## Social
 ############################
@@ -46,7 +43,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "Tyler Anderson Remote Sensing Portfolio"
 
 ############################
 ## Site Features
