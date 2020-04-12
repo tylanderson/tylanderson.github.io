@@ -17,7 +17,7 @@
 }
 
 .dark .search-results {
-  background-color: $sta-dark-background;
+  background-color: rgb(40, 42, 54);
 }
 
 .searching {
@@ -47,14 +47,19 @@
 .search-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 70px;  /* Navbar height. */
   background-color: $sta-background;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+@media screen and (max-width: 1200px) {
+  .search-header {
+    top: 50px;  /* Navbar height. */
+  }
+}
 
 .dark .search-header {
-  background-color: $sta-dark-background;
+  background-color: rgb(40, 42, 54);
 }
 
 .search-header h1 {
@@ -123,15 +128,4 @@
 .form-control:focus {
   border-color: $sta-primary;
   box-shadow: 0 0 0 .2rem $sta-primary-light;
-}
-
-/* DARK themed components. */
-
-/* Algolia search input */
-.dark .ais-search-box--input {
-  background-color: $sta-dark-background;;
-}
-
-.dark #search-query {
-  background-color: $sta-dark-background;;
 }

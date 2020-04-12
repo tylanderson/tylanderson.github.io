@@ -11,18 +11,6 @@
 {{ $link := .link }}
 {{ $target := .target }}
 
-{{/* Get summary. */}}
-{{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if .Params.abstract }}
-  {{ $summary = .Params.abstract | markdownify | emojify }}
-{{ else if $item.Truncated }}
-  {{ $summary = $item.Summary }}
-{{ else }}
-  {{ $summary = $item.Content }}
-{{ end }}
-
 {{ $order := "" }}
 {{ if and ($widget.Params.design.flip_alt_rows | default true) (not (modBool .index 2)) }}
   {{ $order = "order-md-2" }}
@@ -30,18 +18,24 @@
 
 {{ $js_tag_classes := delimit (apply (apply $item.Params.tags "replace" "." " " "-") "printf" "js-id-%s" ".") " " }}
 
-<div class="col-lg-12 project-item isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
+<div class="col-lg-12 project-item isotope-item {{ $js_tag_classes | safeHTMLAttr }}" itemscope itemtype="http://schema.org/CreativeWork">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0">
-        {{- if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end -}}
+      <h3 class="article-title mb-0 mt-0" itemprop="name">
+        {{- if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }} itemprop="url">{{end -}}
         {{ $item.Title | markdownify | emojify }}
         {{- if $do_link}}</a>{{end -}}
       </h3>
 
+      {{ $summary := "" }}
+      {{ if $item.Params.summary }}
+        {{ $summary = $item.Params.summary }}
+      {{ else if $item.Truncated }}
+        {{ $summary = $item.Summary }}
+      {{ end }}
       {{ with $summary }}
-      <div class="article-style">
-        {{ . }}
+      <div class="article-style" itemprop="articleBody">
+        {{ . | markdownify | emojify }}
       </div>
       {{ end }}
 
@@ -55,7 +49,7 @@
       {{ with $resource }}
       {{ $image := .Resize "540x" }}
       {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
-        <img src="{{ $image.RelPermalink }}" alt="">
+        <img src="{{ $image.RelPermalink }}" itemprop="image" alt="">
       {{if $do_link}}</a>{{end}}
       {{end}}
     </div>
