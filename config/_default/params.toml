@@ -60,6 +60,9 @@ phone = ""
 address = {city = "Brooklyn", region = "NY", postcode = "11215", country = "United States", country_code = "US"}
 coordinates = {latitude = "40.677", longitude = "-73.993"}
 
+# Address format (choose from the [address_formats] list below or add you own to the list).
+address_format = "en-us"
+
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
 
@@ -109,6 +112,9 @@ docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
 
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = "l", show_logo = true}
+
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
@@ -129,6 +135,11 @@ sharing = true
   publication_view = 2
   talk_view = 2
 
+# Marketing
+[marketing]
+  google_analytics = "UA-127982010-1"
+  google_tag_manager = ""
+
 # Search.
 [search]
   # Search provider:
@@ -144,17 +155,6 @@ sharing = true
     api_key = ""
     index_name = ""
     show_logo = false
-
-[outputs]
-  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
-  section = [ "HTML", "RSS" ]
-
-[mediaTypes."application/manifest+json"]
-  suffixes = ["webmanifest"]
-
-[outputFormats.WebAppManifest]
-  mediaType = "application/manifest+json"
-  rel = "manifest"
 
 [map]
   # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
@@ -190,3 +190,9 @@ sharing = true
   [comments.disqus]
     shortname = ""  # Paste the shortname from your Disqus dashboard.
     show_count = true  # Show comment count in page header? (true/false)
+
+# Available address formats.
+[address_formats]
+  en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
+  en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
+  zh = {order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', '']}
